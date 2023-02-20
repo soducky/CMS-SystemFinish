@@ -1,0 +1,548 @@
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1676621653379336, "dur":918, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653380261, "dur":42, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1676621653380311, "dur":15, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1676621653380326, "dur":404, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1676621653380753, "dur":446, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653381199, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993488, "dur":250, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993738, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993747, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993749, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993753, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993754, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993761, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993762, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993770, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993771, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993775, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993776, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993779, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993779, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993782, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993783, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993787, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993788, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993791, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993791, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993795, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993796, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993799, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993800, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993804, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993805, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993808, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993809, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993813, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993814, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993817, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993818, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993822, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993832, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653993838, "dur":1314, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1676621653380929, "dur":274, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1676621653381205, "dur":2299, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1676621653383510, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1676621653383513, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1676621653383618, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1676621653383638, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1676621653392572, "dur":4448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1676621653397023, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1676621653397053, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1676621653397078, "dur":153396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1676621653550495, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653550543, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1676621653550550, "dur":13955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653564549, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653564592, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1676621653564600, "dur":17650, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653582323, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653582391, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1676621653582399, "dur":40591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653623035, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653623077, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1676621653623084, "dur":41409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653664533, "dur":61066, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653725604, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1676621653725612, "dur":1069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653726719, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653726760, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1676621653726766, "dur":67450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653794259, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653794327, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1676621653794334, "dur":199102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":1, "ts":1676621653993464, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":1, "ts":1676621653993465, "dur":1, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653380931, "dur":275, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653381207, "dur":2347, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653383555, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1676621653383588, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653389707, "dur":8633, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1676621653398357, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653398387, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653398609, "dur":85935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653484561, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653484613, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653484619, "dur":70931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653555587, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653555625, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653555631, "dur":27935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653583609, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653583649, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653583655, "dur":28787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653612482, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653612528, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653612533, "dur":25730, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653638302, "dur":36925, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653675231, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653675239, "dur":906, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653676183, "dur":2414, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653678602, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653678611, "dur":803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653679452, "dur":2674, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653682130, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653682138, "dur":866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653683041, "dur":28976, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653712023, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653712032, "dur":984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653713056, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653713095, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653713102, "dur":48496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653761635, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653761676, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1676621653761683, "dur":116050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1676621653877771, "dur":115727, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653381037, "dur":186, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653381223, "dur":2286, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653383512, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1676621653383634, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653391730, "dur":145491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1676621653537240, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653537289, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653537297, "dur":17506, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653554845, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653554951, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653554956, "dur":16310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653571307, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653571351, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653571357, "dur":15652, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653587060, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653587101, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653587106, "dur":16962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653604107, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653604148, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653604153, "dur":16715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653620911, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653620956, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653620964, "dur":18769, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653639782, "dur":85942, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653725728, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653725734, "dur":1314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653727085, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653727122, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653727129, "dur":25463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653752670, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653752721, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1676621653752753, "dur":143575, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1676621653896356, "dur":97141, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653381042, "dur":183, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653381226, "dur":2283, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653383512, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1676621653383569, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653387054, "dur":72671, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1676621653459740, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653459792, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653460123, "dur":42755, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653502923, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653502967, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653502974, "dur":13022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653516041, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653516083, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653516113, "dur":33375, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653549537, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653549616, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653549625, "dur":23423, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653573204, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653573255, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653573260, "dur":15345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653588650, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653588697, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653588704, "dur":83218, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653671969, "dur":1012, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653672984, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653672992, "dur":3019, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653676054, "dur":43633, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653719689, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653719695, "dur":2445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653722185, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653722227, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653722234, "dur":116536, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":4, "ts":1676621653838810, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1676621653838850, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653838856, "dur":2134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1676621653841028, "dur":770, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":4, "ts":1676621653841801, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653841805, "dur":752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":4, "ts":1676621653842598, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/level0.resS" }}
+,{ "pid":12345, "tid":4, "ts":1676621653842640, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653842666, "dur":948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/level0.resS" }}
+,{ "pid":12345, "tid":4, "ts":1676621653843651, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":4, "ts":1676621653843693, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653843697, "dur":1023, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":4, "ts":1676621653844759, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1676621653844888, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1676621653844891, "dur":756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1676621653845687, "dur":147801, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653381001, "dur":213, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653381214, "dur":2294, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653383511, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1676621653383643, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653392683, "dur":67060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1676621653459759, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653459825, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653460156, "dur":11307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653471505, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653471553, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653471560, "dur":15536, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653487140, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653487186, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653487224, "dur":16865, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653504119, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653504161, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653504166, "dur":25003, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653529213, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653529259, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653529267, "dur":73901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653603225, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653603309, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653603314, "dur":21550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653625088, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653625159, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653625166, "dur":41753, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653666970, "dur":29632, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653696607, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653696616, "dur":4223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653700876, "dur":27941, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653728820, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653728826, "dur":841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653729704, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653729740, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653729745, "dur":25809, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653755612, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653755660, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653755667, "dur":34185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653789900, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653789944, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653789951, "dur":39635, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653829625, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Plugins/x86_64/sqlite3.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653829671, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653830113, "dur":1886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Plugins/x86_64/sqlite3.dll" }}
+,{ "pid":12345, "tid":5, "ts":1676621653832043, "dur":212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":5, "ts":1676621653832258, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653832450, "dur":701, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":5, "ts":1676621653833187, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":5, "ts":1676621653833233, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653833290, "dur":967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":5, "ts":1676621653834294, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1676621653834332, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653834338, "dur":2855, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1676621653837233, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":5, "ts":1676621653837296, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653837302, "dur":794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":5, "ts":1676621653838132, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1676621653838168, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653838173, "dur":2285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1676621653840497, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1676621653840630, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653840636, "dur":741, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1676621653841413, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/level1.resS" }}
+,{ "pid":12345, "tid":5, "ts":1676621653841451, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653841455, "dur":876, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/level1.resS" }}
+,{ "pid":12345, "tid":5, "ts":1676621653842370, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/level1" }}
+,{ "pid":12345, "tid":5, "ts":1676621653842410, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653842415, "dur":1060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/level1" }}
+,{ "pid":12345, "tid":5, "ts":1676621653843514, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/level0" }}
+,{ "pid":12345, "tid":5, "ts":1676621653843553, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653843558, "dur":962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/level0" }}
+,{ "pid":12345, "tid":5, "ts":1676621653844559, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":5, "ts":1676621653844601, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1676621653844606, "dur":847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":5, "ts":1676621653845487, "dur":147999, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653380981, "dur":229, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653381210, "dur":2346, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653383557, "dur":264, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1676621653383823, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653393161, "dur":66614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1676621653459789, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653459835, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653460174, "dur":26433, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653486651, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653486692, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653486699, "dur":14120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653500862, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653500906, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653500912, "dur":69896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653570895, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653570950, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653570958, "dur":15656, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653586660, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653586761, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653586767, "dur":19470, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653606280, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653606327, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653606334, "dur":57961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653664341, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653664388, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653664396, "dur":58245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653722691, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653722733, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653722740, "dur":60898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653783681, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653783736, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1676621653783746, "dur":92645, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":6, "ts":1676621653876437, "dur":117073, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653381014, "dur":203, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653381217, "dur":2288, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653383511, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":7, "ts":1676621653383564, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653386751, "dur":72982, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":7, "ts":1676621653459760, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653459825, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653460166, "dur":15980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653476190, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653476237, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653476244, "dur":23356, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653499639, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653499681, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653499687, "dur":47180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653546908, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653546946, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653546952, "dur":37681, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653584669, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653584705, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653584712, "dur":17902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653602674, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653602753, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653602761, "dur":22448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653625333, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653625428, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653625432, "dur":42352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653667824, "dur":49585, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653717414, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653717424, "dur":2087, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653719595, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653719644, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653719651, "dur":79620, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653799312, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653799355, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1676621653799362, "dur":141861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1676621653941250, "dur":52239, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1676621653381032, "dur":188, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1676621653381220, "dur":2286, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1676621653383511, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1676621653383558, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1676621653384700, "dur":12936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1676621653397650, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1676621653397677, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1676621653397683, "dur":110607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1676621653508309, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653508352, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1676621653508358, "dur":106125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653614522, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653614567, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1676621653614574, "dur":18546, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653633164, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653633209, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1676621653633215, "dur":36325, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653669581, "dur":28797, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653698382, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1676621653698391, "dur":1095, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653699526, "dur":993, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653700549, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1676621653700559, "dur":789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653701386, "dur":18074, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653719465, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1676621653719474, "dur":1485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653720997, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653721037, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1676621653721042, "dur":136968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1676621653858064, "dur":135431, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653381082, "dur":149, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653381231, "dur":2325, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653383556, "dur":266, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1676621653383824, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653393403, "dur":66207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1676621653459627, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM.exe" }}
+,{ "pid":12345, "tid":9, "ts":1676621653459681, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653459708, "dur":3350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM.exe" }}
+,{ "pid":12345, "tid":9, "ts":1676621653463096, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653463169, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653463252, "dur":29250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653492541, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653492581, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653492588, "dur":14888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653507516, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653507557, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653507562, "dur":36672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653544282, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653544339, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653544350, "dur":42699, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653587085, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653587123, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653587128, "dur":26279, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653613448, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653613488, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653613494, "dur":19097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653632640, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653632687, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653632694, "dur":37199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653669973, "dur":37076, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653707052, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653707058, "dur":1018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653708117, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653708155, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1676621653708161, "dur":187822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":9, "ts":1676621653896010, "dur":97486, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1676621653381060, "dur":168, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1676621653381228, "dur":2285, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1676621653383515, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1676621653383637, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1676621653392212, "dur":67614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1676621653459840, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1676621653459890, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1676621653460183, "dur":23337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1676621653483550, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1676621653483582, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1676621653483587, "dur":14551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1676621653498173, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1676621653498202, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1676621653498210, "dur":13940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1676621653512195, "dur":115599, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":10, "ts":1676621653627799, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1676621653627806, "dur":5378, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":10, "ts":1676621653633223, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1676621653633267, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1676621653633272, "dur":108038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1676621653741350, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":10, "ts":1676621653741390, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1676621653741397, "dur":167656, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":10, "ts":1676621653909079, "dur":84412, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1676621653381116, "dur":121, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1676621653381237, "dur":2274, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1676621653383513, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1676621653383632, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1676621653389698, "dur":70022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1676621653459736, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":11, "ts":1676621653459767, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1676621653460082, "dur":159046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":11, "ts":1676621653619150, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1676621653619199, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1676621653619204, "dur":18678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1676621653637925, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1676621653637971, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1676621653637979, "dur":20764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1676621653658789, "dur":73710, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":11, "ts":1676621653732503, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1676621653732511, "dur":1182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":11, "ts":1676621653733746, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":11, "ts":1676621653733788, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1676621653733793, "dur":145691, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":11, "ts":1676621653879517, "dur":113983, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653381101, "dur":133, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653381234, "dur":2321, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653383555, "dur":247, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1676621653383804, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653392964, "dur":95659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1676621653488642, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653488690, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653488697, "dur":11163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653499900, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653499941, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653499946, "dur":13351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653513339, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653513383, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653513390, "dur":11711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653525145, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653525192, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653525199, "dur":29564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653554809, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653554853, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653554862, "dur":17277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653572192, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653572236, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653572241, "dur":39910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653612201, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653612249, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653612256, "dur":22255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653634550, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653634590, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653634596, "dur":32132, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653666782, "dur":180831, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653847619, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1676621653847628, "dur":1102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":12, "ts":1676621653848772, "dur":144725, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1676621653381137, "dur":103, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1676621653381240, "dur":2276, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1676621653383517, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":13, "ts":1676621653383636, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1676621653391962, "dur":142572, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":13, "ts":1676621653534555, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1676621653534605, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1676621653534612, "dur":37366, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1676621653572021, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1676621653572059, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1676621653572066, "dur":30907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1676621653603087, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1676621653603143, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1676621653603148, "dur":15803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1676621653619013, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1676621653619089, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1676621653619103, "dur":109583, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1676621653728729, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":13, "ts":1676621653728766, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1676621653728771, "dur":83042, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":13, "ts":1676621653811854, "dur":95252, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":13, "ts":1676621653907110, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1676621653907116, "dur":748, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":13, "ts":1676621653907892, "dur":85600, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1676621653381154, "dur":89, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1676621653381243, "dur":2267, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1676621653383511, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":14, "ts":1676621653383559, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1676621653384728, "dur":12900, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":14, "ts":1676621653397644, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":14, "ts":1676621653397676, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1676621653397683, "dur":61888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":14, "ts":1676621653459591, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":14, "ts":1676621653459609, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1676621653459615, "dur":246577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":14, "ts":1676621653706213, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":14, "ts":1676621653706259, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1676621653706267, "dur":78784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":14, "ts":1676621653785089, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":14, "ts":1676621653785126, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1676621653785131, "dur":109268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":14, "ts":1676621653894435, "dur":99067, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1676621653381173, "dur":73, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1676621653381246, "dur":2265, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1676621653383511, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":15, "ts":1676621653383568, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1676621653386814, "dur":11887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":15, "ts":1676621653398715, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":15, "ts":1676621653398737, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1676621653398772, "dur":382490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":15, "ts":1676621653781284, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":15, "ts":1676621653781333, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1676621653781341, "dur":95044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/CMS SYSTEM_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":15, "ts":1676621653876436, "dur":117049, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1676621653381190, "dur":58, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1676621653381249, "dur":2258, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1676621653383511, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":16, "ts":1676621653383572, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1676621653387242, "dur":11558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":16, "ts":1676621653398810, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/INDIGO-2020-11/Desktop/Unitiy/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":16, "ts":1676621653398837, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1676621653398840, "dur":588288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/INDIGO-2020-11/Desktop/Unitiy/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":16, "ts":1676621653987140, "dur":6369, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1676621653996177, "dur":1525, "ph":"X", "name": "ProfilerWriteOutput" }
+,
