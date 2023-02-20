@@ -8,31 +8,28 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
-public class AddButton : MonoBehaviour
+public class AddButton : MonoBehaviour // 플러스 버튼 누를시 작동하는 스크립트
 {
-    public GameObject OriginalPrefab;
-    public Transform Parent;
-    public GameObject WaringMent;
+    public GameObject OriginalPrefab; // 원본 프리펩 ( 1번 오브젝트는 기본값, 지워지지 않음)
+    public Transform Parent; // 부모 위치
+    public GameObject WaringMent; // 경고 멘트( 오브젝트 갯수가 초과되면 나오는 창 )
+    public GameObject DeleteButton; // 삭제 버튼
 
-    // public Text[] NumberText = new Text[30];
-    // public GameObject[] clone = new GameObject[30];
+    public List<GameObject> clonelist = new List<GameObject>(); // 프리펩을 담을 리스트, 즉, 추가버튼을 누를때 추가되는 오브젝트들
+    public List<Text> numbertextlist = new List<Text>(); // 각 오브젝트들의 개수를 체크하는 번호리스트
+    public List<int> Valuelist = new List<int>(); 
 
-    public List<GameObject> clonelist = new List<GameObject>();
-    public List<Text> numbertextlist = new List<Text>();
-    public GameObject DeleteButton;
-    public List<int> Valuelist = new List<int>();
-
-    bool Switch = true;
-    int j = 1;
+    bool Switch = true; // 오브젝트가 56개까지 생성할 수 있게 만듬으로 추가버튼의 누르는 횟수를 56회로 제한하기 위한 스위치
+    int j = 1; // 첫번째 오브젝트 0번은 기본값으로 1번부터 시작
 
     void Start()
     {
         for (int k=0; k < Valuelist.Count; k++)
         {
-            Valuelist[k] = k+1;
+            Valuelist[k] = k+1; // 1~56번까지 초기화
         }
 
-        StartLoadData();
+        StartLoadData(); // 이전에 저장했던 데이터 로드
 
     }
 
@@ -40,95 +37,70 @@ public class AddButton : MonoBehaviour
     {
         if (clonelist.Count == 1)
         {
-            DeleteButton.SetActive(false);
+            DeleteButton.SetActive(false); // 오브젝트가 1개 밖에 없을 경우 삭제버튼 비활성화
         }
 
         else
         {
-            DeleteButton.SetActive(true);
+            DeleteButton.SetActive(true); // 오브젝트가 2개 이상일 경우 삭제버튼 활성화
         }
     }
     public void PrefabAddBtn()
     {
-        if (Switch == true)
+        if (Switch == true) // 스위치 (오브젝트 갯수가 56개 미만일때는 참) 
         {
 
-          /*  clone[i] = Instantiate(OriginalPrefab, Parent);
-            clone[i].name = "Clone" + NumMax[i].ToString();
-            clone[i].transform.GetChild(6).name = "CloneNumber" + NumMax[i].ToString();
-            clonelist = clone.ToList();
-            Debug.Log(clonelist.Count);
+            clonelist.Add(Instantiate(OriginalPrefab,Parent)); // 오브젝트 생성 
+            InputFiledNull(); // 126번 줄에 설명 있음
+            clonelist[j].name = "Clone" + Valuelist[j].ToString(); // 오브젝트 이름 변경해줌
 
-            NumberText[i] = clone[i].transform.GetChild(6).GetComponent<Text>();
-            NumberText[i].text = NumMax[i].ToString() + ".";
-            numbertextlist = NumberText.ToList();
-            Debug.Log(numbertextlist.Count);
-          */
-
-            clonelist.Add(Instantiate(OriginalPrefab,Parent));
-            InputFiledNull();
-            clonelist[j].name = "Clone" + Valuelist[j].ToString();
-
-            numbertextlist.Add(clonelist[j].transform.GetChild(6).GetComponent<Text>());
+            numbertextlist.Add(clonelist[j].transform.GetChild(6).GetComponent<Text>()); // 넘버리스트에 추가
             numbertextlist[j].name = "Clone" + Valuelist[j].ToString();
             numbertextlist[j].text = Valuelist[j].ToString();
 
             j++;
-            DataManager.Instance.data.i++;
+            DataManager.Instance.data.i++; // 싱글톤 i의 갯수가 올라감. json파일로 저장하기 위해서( i는 오브젝트의 갯수) 
 
-            if (j == 56)
+            if (j == 56) // 갯수가 56개면 스위치 false 
             {
                 Switch = false;
             }
         }
 
-        else if(Switch == false)
+        else if(Switch == false) // 갯수가 56개면 경고멘트 출력
         {
             WaringMent.SetActive(true);
             Invoke("TimeDelay", 2f);
         }
     }
-    void TimeDelay()
+    void TimeDelay() // 경고멘트는 2초 뒤에 사라짐
     {
         WaringMent.SetActive(false);
     }
 
-    public void MinusI()
-    {
+    public void MinusI() // 오브젝트 삭제 버튼을 누르면 앞서 선언했던 i값과 j값의 갯수가 줄어들음
+    {                    //  -> 즉, 오브젝트 더 생성가능  
         j--;
         DataManager.Instance.data.i--;
         Switch = true;
     }
 
-    public void StartLoadData()
+    public void StartLoadData() // start문에서 호출됨, 데이터 불러오기 기능
     {
-        DataManager.Instance.LoadGameData();
+        DataManager.Instance.LoadGameData(); // 저장했던 json 파일 불러오기 
 
         for (int m = 1; m < DataManager.Instance.data.i; m++)
         {
-            CopyAddButton();
+            CopyAddButton(); // 불러오면 i 값만큼 오브젝트를 다시 생성 -> 다시 들어오면 오브젝트는 사라지니까 
         }
 
-        GameObject.FindWithTag("InputField").GetComponent<InputData>().WarmingUpLoad();
+        GameObject.FindWithTag("InputField").GetComponent<InputData>().WarmingUpLoad(); // 글씨도 불러와야하므로 playerprefs도 불러옴
     }
 
-    public void CopyAddButton()
+    public void CopyAddButton() // 오브젝트 다시 생성
     {
         if (Switch == true)
         {
-
-            /*  clone[i] = Instantiate(OriginalPrefab, Parent);
-              clone[i].name = "Clone" + NumMax[i].ToString();
-              clone[i].transform.GetChild(6).name = "CloneNumber" + NumMax[i].ToString();
-              clonelist = clone.ToList();
-              Debug.Log(clonelist.Count);
-
-              NumberText[i] = clone[i].transform.GetChild(6).GetComponent<Text>();
-              NumberText[i].text = NumMax[i].ToString() + ".";
-              numbertextlist = NumberText.ToList();
-              Debug.Log(numbertextlist.Count);
-            */
-
             clonelist.Add(Instantiate(OriginalPrefab, Parent));
             clonelist[j].name = "Clone" + Valuelist[j].ToString();
 
@@ -151,7 +123,7 @@ public class AddButton : MonoBehaviour
         }
     }
 
-    void InputFiledNull()
+    void InputFiledNull() // 저장된걸 다시 불러올때 오브젝트 1번의 텍스트 값이 다른 오브젝트에 대입되므로 방지하기 위해서 null 값 추가
     {
         clonelist[j].transform.GetChild(2).GetComponent<InputField>().text = null;
         clonelist[j].transform.GetChild(1).GetComponent<InputField>().text = null;

@@ -25,7 +25,7 @@ public class LoadObject : MonoBehaviour
                 CMSList[i].gameObject.SetActive(false);
             }
         }
-
+/*
         for (int i = 0; i < 56; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false)
@@ -33,7 +33,7 @@ public class LoadObject : MonoBehaviour
                 togglestext[i].isOn= false;
                 togglestext[i].transform.GetChild(2).GetComponent<Text>().text = "PJ Mode";
             }
-        }
+        }*/
     }
 
     void Update()

@@ -7,26 +7,27 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class RemoveList : MonoBehaviour, IPointerClickHandler
+public class RemoveList : MonoBehaviour, IPointerClickHandler // 콜라이더 클릭 가능하게끔 ipointerclickhandler 추가
 {
-    public GameObject CancelMent;
-    public Text CancelInfoText;
-    public Button OkayButton;
-    public GameObject ScrollView;
+    public GameObject CancelMent; // 취소멘트 창 
+    public Text CancelInfoText; // 취소 안내 텍스트
+    public Button OkayButton; // 취소 확인버튼
+    public GameObject ScrollView; // 스크롤뷰 
+    public GameObject DeleteCompleteText;
 
-    bool CheckSign = false;
+    bool CheckSign = false; // 취소멘트 스위치 (거짓이면 비활성)
     public void OnPointerClick(PointerEventData eventData)
     {
-        
-        if (CheckSign == true)
+
+        if (CheckSign == true) // 취소멘트 활성화
         {
             if (this.gameObject.name == "InputFieldPrefab")
             {
-                return;
+                return; // inputfieldprefab은 첫번째 오브젝트이므로 아무일도 일어나지 않게 하기 위해 
             }
 
             CancelInfoText.text = this.gameObject.transform.GetChild(6).GetComponent<Text>().text + "번을 삭제하시겠습니까?";
-            CancelMent.SetActive(true);
+            CancelMent.SetActive(true); // 안내 문구 
 
             switch (this.gameObject.name)
             {
@@ -248,13 +249,15 @@ public class RemoveList : MonoBehaviour, IPointerClickHandler
                 case "Clone56":
                     OkayButton.onClick.AddListener(Okaybutton);
                     break;
-            }
+            } // 각 오브젝트에 이름을 기준으로 addlistener 활성화 
         }
     }
 
+   // public void
+
     public void CheckSignTrue()
     {
-        CheckSign= true;
+        CheckSign = true;
     }
 
     public void CheckSignFalse()
@@ -263,7 +266,7 @@ public class RemoveList : MonoBehaviour, IPointerClickHandler
         CheckSign = false;
     }
 
-    public void ReturnButton()
+    public void ReturnButton() // 다시 기존 모드로 돌아가는 버튼 
     {
         CancelMent.SetActive(false);
     }
@@ -387,14 +390,17 @@ public class RemoveList : MonoBehaviour, IPointerClickHandler
             case "Clone30":
                 OkayButton.onClick.RemoveListener(Okaybutton);
                 break;
-        }
+        } // 오케이 버튼을 누르면 삭제가 됨
 
-        Destroy(this.gameObject);
+        Destroy(this.gameObject); // 오브젝트 파괴 
 
-        CheckSignFalse();
+        CheckSignFalse(); // 오브젝트 삭제 후 취소창 닫음 
 
-        ScrollView.SetActive(false);   
+        //List<GameObject> clonelist = GameObject.FindWithTag("AddButton").GetComponent<AddButton>().clonelist;
 
+        ScrollView.SetActive(true); // 스크롤뷰 끄기 
+
+        DeleteCompleteText.SetActive(true); // 오케이 버튼 누르면 삭제완료안내 메세지 출력
     }
 }
 

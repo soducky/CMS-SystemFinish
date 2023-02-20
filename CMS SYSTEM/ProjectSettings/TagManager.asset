@@ -15,6 +15,7 @@ TagManager:
   - CMS
   - Toggle
   - Hide
+  - DeleteComplete
   layers:
   - Default
   - TransparentFX
