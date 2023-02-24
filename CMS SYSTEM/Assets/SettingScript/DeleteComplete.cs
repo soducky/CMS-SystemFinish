@@ -8,8 +8,8 @@ public class DeleteComplete : MonoBehaviour // 삭제 완료 메세지 클래스
 
     public void EnterAddMode2()
     {
-        GameObject.FindWithTag("DeleteButton").GetComponent<DeleteButton>().DeleteButtonClik();
-        // 삭제완료 메세지 누르면 Deletebutton 누르는 것과 동일한 동작
+        GameObject.FindWithTag("BackGround").transform.GetChild(4).GetComponent<DeleteButton>().DeleteButtonClik();
+        // 삭제완료 메세지 누르면 Deletebutton 누르는 것과 동일한 동작 -> 즉, 기본화면으로 돌아가게 됨.
     }
 
     public void DeleteCompleteMethod()

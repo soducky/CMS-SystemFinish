@@ -13,9 +13,246 @@ public class RemoveList : MonoBehaviour, IPointerClickHandler // ÄÝ¶óÀÌ´õ Å¬¸¯ °
     public Text CancelInfoText; // Ãë¼Ò ¾È³» ÅØ½ºÆ®
     public Button OkayButton; // Ãë¼Ò È®ÀÎ¹öÆ°
     public GameObject ScrollView; // ½ºÅ©·Ñºä 
-    public GameObject DeleteCompleteText;
+    public GameObject DeleteCompleteText; // »èÁ¦¾È³» ¹®±¸ 
+
+    public GameObject AllDeleteBtn; // ÀüÃ¼ »èÁ¦ ¹öÆ° -> ¿À·ù·Î ÀÎÇØ ºñÈ°¼ºÈ­ ½ÃÅ°±â À§ÇØ¼­ & ¹Ø¿¡ ÀÌÀ¯ 
+    public GameObject DeleteBtn; // ¾È³»¸àÆ® Ã¢ÀÌ ¶ß¸é ¹öÆ°µéÀº Àá½Ã ºñÈ°¼ºÈ­ ½ÃÅ°±â À§ÇØ 
+
+    public GameObject ZoneName; // ZoneName ¿µ¿ªÀ» 8ÀÇ ¹è¼ö ´ÜÀ§·Î È°¼º/ºñÈ°¼ºÈ­ ÇÏ±â À§ÇØ
 
     bool CheckSign = false; // Ãë¼Ò¸àÆ® ½ºÀ§Ä¡ (°ÅÁþÀÌ¸é ºñÈ°¼º)
+
+    private void Start()
+    {
+
+        switch (this.gameObject.name)
+        {
+            case "InputFieldPrefab":
+                ZoneName.SetActive(true); 
+                break;
+
+            case "Clone2":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone3":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone4":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone5":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone6":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone7":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone8":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone9":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone10":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone11":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone12":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone13":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone14":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone15":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone16":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone17":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone18":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone19":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone20":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone21":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone22":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone23":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone24":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone25":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone26":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone27":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone28":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone29":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone30":
+                ZoneName.SetActive(false);
+                break;
+            case "Clone31":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone32":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone33":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone34":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone35":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone36":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone37":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone38":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone39":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone40":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone41":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone42":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone43":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone44":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone45":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone46":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone47":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone48":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone49":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone50":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone51":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone52":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone53":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone54":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone55":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone56":
+                ZoneName.SetActive(false);
+                break;
+        } // °¢ ¿ÀºêÁ§Æ®¿¡ ÀÌ¸§À» ±âÁØÀ¸·Î Zone¿µ¿ª È°¼ºÈ­ or ºñÈ°¼ºÈ­ => È°¼ºÈ­´Â 8ÀÇ ¹è¼ö ´ÜÀ§·Î Âü 
+
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
 
@@ -28,6 +265,9 @@ public class RemoveList : MonoBehaviour, IPointerClickHandler // ÄÝ¶óÀÌ´õ Å¬¸¯ °
 
             CancelInfoText.text = this.gameObject.transform.GetChild(6).GetComponent<Text>().text + "¹øÀ» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?";
             CancelMent.SetActive(true); // ¾È³» ¹®±¸ 
+
+            AllDeleteBtn.SetActive(false); // ÀüÃ¼»èÁ¦¹öÆ°°ú »èÁ¦¹öÆ° ¾È³» ¹®±¸°¡ ¶ß¸é Àá½Ã ºñÈ°¼ºÈ­
+            DeleteBtn.SetActive(false);
 
             switch (this.gameObject.name)
             {
@@ -269,6 +509,9 @@ public class RemoveList : MonoBehaviour, IPointerClickHandler // ÄÝ¶óÀÌ´õ Å¬¸¯ °
     public void ReturnButton() // ´Ù½Ã ±âÁ¸ ¸ðµå·Î µ¹¾Æ°¡´Â ¹öÆ° 
     {
         CancelMent.SetActive(false);
+
+        AllDeleteBtn.SetActive(true); // ÀüÃ¼»èÁ¦¹öÆ°°ú »èÁ¦¹öÆ° ´Ù½Ã È°¼ºÈ­
+        DeleteBtn.SetActive(true);
     }
 
     public void Okaybutton()
@@ -396,11 +639,11 @@ public class RemoveList : MonoBehaviour, IPointerClickHandler // ÄÝ¶óÀÌ´õ Å¬¸¯ °
 
         CheckSignFalse(); // ¿ÀºêÁ§Æ® »èÁ¦ ÈÄ Ãë¼ÒÃ¢ ´ÝÀ½ 
 
-        //List<GameObject> clonelist = GameObject.FindWithTag("AddButton").GetComponent<AddButton>().clonelist;
-
-        ScrollView.SetActive(true); // ½ºÅ©·Ñºä ²ô±â 
+        ScrollView.SetActive(false); // ½ºÅ©·Ñºä ²ô±â 
 
         DeleteCompleteText.SetActive(true); // ¿ÀÄÉÀÌ ¹öÆ° ´©¸£¸é »èÁ¦¿Ï·á¾È³» ¸Þ¼¼Áö Ãâ·Â
+
     }
+
 }
 

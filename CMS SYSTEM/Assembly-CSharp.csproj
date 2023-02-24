@@ -83,6 +83,7 @@
     <Compile Include="Assets\PJLinkScript\CommandResponse.cs" />
     <Compile Include="Assets\SettingScript\DeleteButton.cs" />
     <Compile Include="Assets\PJLinkScript\PjlinkClient.cs" />
+    <Compile Include="Assets\SettingScript\AllDataDeleteButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TTF\LiberationSans - OFL.txt" />

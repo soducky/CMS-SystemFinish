@@ -22,6 +22,11 @@ public class AddButton : MonoBehaviour // 플러스 버튼 누를시 작동하는 스크립트
     bool Switch = true; // 오브젝트가 56개까지 생성할 수 있게 만듬으로 추가버튼의 누르는 횟수를 56회로 제한하기 위한 스위치
     int j = 1; // 첫번째 오브젝트 0번은 기본값으로 1번부터 시작
 
+    private void Awake()
+    {
+        Application.runInBackground = true; // 백그라운드에서 동작하는 기능, PC에서만 가능 
+    }
+
     void Start()
     {
         for (int k=0; k < Valuelist.Count; k++)

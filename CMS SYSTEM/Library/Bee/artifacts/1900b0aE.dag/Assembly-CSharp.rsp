@@ -376,6 +376,7 @@
 "Assets/PJLinkScript/ProjectorCommandException.cs"
 "Assets/PJLinkScript/ProjectorConnectionException.cs"
 "Assets/SettingScript/AddButton.cs"
+"Assets/SettingScript/AllDataDeleteButton.cs"
 "Assets/SettingScript/DataManager.cs"
 "Assets/SettingScript/DeleteButton.cs"
 "Assets/SettingScript/DeleteComplete.cs"

@@ -11,9 +11,11 @@ public class DeleteButton : MonoBehaviour
     public Image scrollView; // 삭제모드 일때는 스크롤 뷰 색상을 빨간색으로 변경하기 위해 
     public BoxCollider2D InputFieldPrefab; // 오브젝트 마다 똑같은 콜라이더를 추가하기 위해
     public GameObject addButton; // 삭제모드 일때 추가버튼 비활성화 시키기 위해
-    public GameObject SaveButton; // 저장버튼 
     public GameObject ScrollView; // 스크롤뷰 
-    public Button Deletebtn;
+    public GameObject BackBtn;
+    public Button Deletebtn; // 삭제버튼
+    public GameObject AllDeleteBtn; // 전체 삭제 버튼
+    public GameObject DeleteWaringMent; // 삭제 안내 문구 출력 
 
     public List<BoxCollider2D> boxcolliderlist = new List<BoxCollider2D>(); // 콜라이더들을 리스트에 대입
 
@@ -23,6 +25,10 @@ public class DeleteButton : MonoBehaviour
     {
         if (count == false) // 처음 누르면 취소모드 
         {
+            DeleteWaringMent.SetActive(true); // 삭제 안내 멘트 활성화
+
+            Invoke("TimeDelay", 0.4f); // 타임 딜레이
+
             EnterDeleteMode();
         }
 
@@ -31,6 +37,11 @@ public class DeleteButton : MonoBehaviour
             EnterAddMode();
         }
 
+    }
+
+    void TimeDelay() // 경고멘트는 2초 뒤에 사라짐
+    {
+        DeleteWaringMent.SetActive(false); // 삭제 안내 문구 활성화 2초 invoke, 이후 비활성화
     }
 
     void ChangeColor()
@@ -46,10 +57,13 @@ public class DeleteButton : MonoBehaviour
     }
     public void EnterDeleteMode() // 취소 모드 진입
     {
+
         List<GameObject> clonelist = GameObject.FindWithTag("AddButton").GetComponent<AddButton>().clonelist; // 클론리스트 불러오기
 
-        addButton.SetActive(false);
-        SaveButton.SetActive(false); // 취소모드에는 오류날 수 있는 버튼들 비활성화 
+        BackBtn.SetActive(false);     // 뒤로가기 버튼 비활성화
+        addButton.SetActive(false); // 취소모드에는 오류날 수 있는 버튼들 비활성화 
+
+        AllDeleteBtn.SetActive(true); // 전체 삭제 버튼 활성화
 
         GameObject.Find("InputFieldPrefab").GetComponent<RemoveList>().CheckSignTrue(); // 취소 창을 뜨게하는 스위치 (1번 오브젝트)
 
@@ -78,8 +92,10 @@ public class DeleteButton : MonoBehaviour
     {
         ScrollView.SetActive(true); // 스크롤 활성화
         ChangeColor(); // 색상 변경
-        addButton.SetActive(true); 
-        SaveButton.SetActive(true); // 버튼들 활성화 
+        addButton.SetActive(true); // 버튼들 활성화 
+        BackBtn.SetActive(true);    // 뒤로가기 버튼 활성화
+
+        AllDeleteBtn.SetActive(false); // 전체 삭제 버튼 비활성화
 
         GameObject.Find("InputFieldPrefab").GetComponent<RemoveList>().CheckSignFalse(); // 취소창 뜨게하는 스위치 false
 
