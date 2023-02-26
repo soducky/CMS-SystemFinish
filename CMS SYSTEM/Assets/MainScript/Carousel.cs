@@ -8,10 +8,10 @@ using System.Runtime.CompilerServices;
 
 public class Carousel : MonoBehaviour
 {
-    public GameObject scrollbar;
-    public GameObject selectButton;
-    float scroll_pos = 0;
-    bool selectedBtn = false;
+    public GameObject scrollbar; // 스크롤바
+    public GameObject selectButton; // 누르는 버튼
+    float scroll_pos = 0; // 위치
+    bool selectedBtn = false; 
     float[] pos;
     Scrollbar scroll;
     int i = 0;

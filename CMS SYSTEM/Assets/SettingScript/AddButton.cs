@@ -63,6 +63,7 @@ public class AddButton : MonoBehaviour // 플러스 버튼 누를시 작동하는 스크립트
             numbertextlist[j].name = "Clone" + Valuelist[j].ToString();
             numbertextlist[j].text = Valuelist[j].ToString();
 
+            clonelist[j].transform.GetChild(8).GetChild(0).name = "Toggle" + Valuelist[j].ToString();
             j++;
             DataManager.Instance.data.i++; // 싱글톤 i의 갯수가 올라감. json파일로 저장하기 위해서( i는 오브젝트의 갯수) 
 
@@ -113,6 +114,7 @@ public class AddButton : MonoBehaviour // 플러스 버튼 누를시 작동하는 스크립트
             numbertextlist[j].name = "Clone" + Valuelist[j].ToString();
             numbertextlist[j].text = Valuelist[j].ToString();
 
+            clonelist[j].transform.GetChild(8).GetChild(0).name= "Toggle" + Valuelist[j].ToString();
             j++;
 
             if (j == 56)

@@ -21,7 +21,7 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("MainScene"); // 메인 씬으로 이동
     }
 
-    public void BackAndSaveButton()
+    public void BackAndSaveButton() // 설정페이지에서 메인페이지로 이동시 데이터 저장을 위해 
     {
         GameObject.Find("InputFieldPrefab").GetComponent<InputData>().Save();  // 저장 후 메인 씬으로 이동
         SceneManager.LoadScene("MainScene");

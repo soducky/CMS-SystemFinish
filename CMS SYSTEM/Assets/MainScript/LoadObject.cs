@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class LoadObject : MonoBehaviour
 {
     public GameObject[] CMSList;
-    public Toggle[] togglestext;
+    //public Toggle[] togglestext;
 
     private void Awake()
     {

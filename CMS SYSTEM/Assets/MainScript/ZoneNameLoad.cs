@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class ZoneNameLoad : MonoBehaviour
 {
-    public Text[] Zone1InfoText;
+    public Text[] Zone1InfoText; // 누르는 버튼에 연결된 존 이름 텍스트-> Zone1InfoText에 들어감
 
-    void Start()
+    void Start() // 시작할때 존 이름 불러오기 
     {
-        if (49 <= DataManager.Instance.data.i)
+        if (49 <= DataManager.Instance.data.i) // i 갯수가 49개보다 클때 다 표시 (8씩 빼면됨)
         {
             Zone1InfoText[0].text = DataManager.Instance.data.ZoneName[0];
             Zone1InfoText[1].text = DataManager.Instance.data.ZoneName[8];

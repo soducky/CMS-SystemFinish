@@ -16,12 +16,12 @@ public class Data // 씬 이동시 데이터 저장할 것들
 {
     public int i = 1; // clone 오브젝트(정보 담고있는 오브젝트)의 갯수 
 
-    public bool[] s = new bool[] {true, true, true, true, true, true, true, true, true, true,
-         true, true, true, true, true, true, true, true, true, true,
-         true, true, true, true, true, true, true,true,true, true,
-         true,true,true,true,true,true,true,true,true,true,
-         true,true,true,true,true,true,true,true,true,true,
-         true,true,true,true,true,true}; // 숨기기모드 토글 
+    public bool[] s = new bool[] {false, false, false, false, false, false, false,false, false, false,
+        false, false, false, false, false, false, false, false, false, false,
+        false, false, false, false, false, false, false, false, false, false,
+        false, false, false, false, false, false, false, false, false, false,
+        false, false, false, false, false, false, false, false, false, false,
+        false, false, false, false, false, false}; // 숨기기모드 토글 
 
     public bool[] modeSelect = new bool[] {true, true, true, true, true, true, true, true, true, true,
          true, true, true, true, true, true, true, true, true, true,

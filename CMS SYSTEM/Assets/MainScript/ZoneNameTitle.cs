@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ZoneNameTitle : MonoBehaviour
 {
-    public Text[] ZoneName_Title;
+    public Text[] ZoneName_Title; // Zone Name 데이터 불러오기, Zone1Name에 들어감
     void Start()
     {
         if (49 <= DataManager.Instance.data.i)
