@@ -13,7 +13,7 @@ public class Carousel : MonoBehaviour
     float scroll_pos = 0; // 위치
     bool selectedBtn = false; 
     float[] pos;
-    Scrollbar scroll;
+    Scrollbar scroll; // 스크롤 
     int i = 0;
     int selectedValue;
 
@@ -97,7 +97,7 @@ public class Carousel : MonoBehaviour
         }
     }
 
-    public void OnePlusOne()
+    public void OnePlusOne() // 변형한것 갯수가 7면 오류가 발생하므로 한번 더 누르는 효과를 줌 
     {
         float distacne = 1f / (pos.Length - 1);
         int EndValue = int.Parse(EventSystem.current.currentSelectedGameObject.transform.GetComponentInChildren<Text>().text) - 2;
@@ -118,5 +118,5 @@ public class Carousel : MonoBehaviour
             }
         }
     }
-
+    //  https://www.youtube.com/watch?v=3AxTpn1Csmk 참조 요망
 }

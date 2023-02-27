@@ -63,7 +63,8 @@ public class AddButton : MonoBehaviour // 플러스 버튼 누를시 작동하는 스크립트
             numbertextlist[j].name = "Clone" + Valuelist[j].ToString();
             numbertextlist[j].text = Valuelist[j].ToString();
 
-            clonelist[j].transform.GetChild(8).GetChild(0).name = "Toggle" + Valuelist[j].ToString();
+            clonelist[j].transform.GetChild(8).GetChild(0).name = "Toggle" + Valuelist[j].ToString(); // 하위 오브젝트인 토글이름 바꾸기
+            clonelist[j].transform.GetChild(9).name = "ModeToggle" + Valuelist[j].ToString(); // 하위 오브젝트인 토글 모드 이름 바꾸기
             j++;
             DataManager.Instance.data.i++; // 싱글톤 i의 갯수가 올라감. json파일로 저장하기 위해서( i는 오브젝트의 갯수) 
 
@@ -103,7 +104,7 @@ public class AddButton : MonoBehaviour // 플러스 버튼 누를시 작동하는 스크립트
         GameObject.FindWithTag("InputField").GetComponent<InputData>().WarmingUpLoad(); // 글씨도 불러와야하므로 playerprefs도 불러옴
     }
 
-    public void CopyAddButton() // 오브젝트 다시 생성
+    public void CopyAddButton() // 오브젝트 다시 생성 // 시작할떄 다시 생성해야하므로 
     {
         if (Switch == true)
         {
@@ -115,6 +116,8 @@ public class AddButton : MonoBehaviour // 플러스 버튼 누를시 작동하는 스크립트
             numbertextlist[j].text = Valuelist[j].ToString();
 
             clonelist[j].transform.GetChild(8).GetChild(0).name= "Toggle" + Valuelist[j].ToString();
+            clonelist[j].transform.GetChild(9).name = "ModeToggle" + Valuelist[j].ToString();
+
             j++;
 
             if (j == 56)

@@ -16,21 +16,26 @@ public class SelectToggles : MonoBehaviour
 
     private void Start()
     {
-        TitleTransfer();
+        TitleTransfer();  // 이름에서 숫자 따오기 
         Toggle_solo = GetComponent<Toggle>();
-        Togglestart();
-        LoadToggleData();
+        Togglestart(); // 이벤트 추가 start문 
+        LoadToggleData(); // 씬 이동하고 다시 돌아올떄 저장된 데이터에 맞춰 업데이트
     }
 
+   /* private void Update()
+    {
+        LoadToggleData();
+    }*/  
+   // 토글 오류나면 사용 
     public void Togglestart()
     {
-        Toggle_solo.onValueChanged.AddListener(OnToggleValueChanged);
+        Toggle_solo.onValueChanged.AddListener(OnToggleValueChanged); // 이벤트 추가 start문 
     }
 
-    public void OnToggleValueChanged(bool boolean)
+    public void OnToggleValueChanged(bool boolean)  // 토클 클릭 이벤트
     {
 
-        if (boolean == true)
+        if (boolean == true) // 참이면 데이터 값 true로 변경
         {
             DataManager.Instance.data.s[tmp - 1] = true;
         }
@@ -43,21 +48,21 @@ public class SelectToggles : MonoBehaviour
     }
 
     public void LoadToggleData()
-    {
+    { // 씬 이동하고 다시 돌아올떄 저장된 데이터에 맞춰 업데이트
 
         if (Toggle_solo.isOn == false && DataManager.Instance.data.s[tmp - 1] == false)
         {
-            return;
+            return; // 두개 다 참이거나 false 일때는 리턴
         }
 
         else if (Toggle_solo.isOn == false && DataManager.Instance.data.s[tmp - 1] == true)
         {
-            Toggle_solo.isOn = true;
-        }
+            Toggle_solo.isOn = true; // 데이터값에 따라 토글값 맞춤
+        } 
 
         else if (Toggle_solo.isOn == true && DataManager.Instance.data.s[tmp - 1] == false)
         {
-            Toggle_solo.isOn = false;
+            Toggle_solo.isOn = false; // 데이터값에 따라 토글값 맞춤
         }
 
         else if (Toggle_solo.isOn == true && DataManager.Instance.data.s[tmp - 1] == true)
@@ -68,10 +73,9 @@ public class SelectToggles : MonoBehaviour
 
     void TitleTransfer()
     {
-       // if(this.gameObject.name = )
         slice = this.gameObject.name;
-        String substring = slice.Substring(6);
-        tmp = int.Parse(substring);
+        String substring = slice.Substring(6); //오브젝트 이름에서 10번째부터 끝까지 잘라냄
+        tmp = int.Parse(substring);  // 그 문자열을 숫자로 변환 
     }
 }
 

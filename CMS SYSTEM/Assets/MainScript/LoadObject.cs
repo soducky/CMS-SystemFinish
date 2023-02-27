@@ -6,38 +6,24 @@ using UnityEngine.UI;
 
 public class LoadObject : MonoBehaviour
 {
-    public GameObject[] CMSList;
-    //public Toggle[] togglestext;
+    public GameObject[] CMSList; // CMS 배열 
+    public GameObject[] ZoneList;
 
     private void Awake()
     {
-        Application.runInBackground = true;
+        Application.runInBackground = true; // 백그라운드 실행
     }
 
     void Start()
     {
-        DataManager.Instance.LoadGameData();
+        DataManager.Instance.LoadGameData(); // 저장된 데이터 불러오기
 
         for (int i = 0; i < 56; i++)
         {
-            if (DataManager.Instance.data.s[i] == false)
+            if (DataManager.Instance.data.s[i] == false) // i의 갯수만큼 반복하여 false 상태인거는 다 보이지 않도록 설정
             {
                 CMSList[i].gameObject.SetActive(false);
             }
         }
-/*
-        for (int i = 0; i < 56; i++)
-        {
-            if (DataManager.Instance.data.modeSelect[i] == false)
-            {
-                togglestext[i].isOn= false;
-                togglestext[i].transform.GetChild(2).GetComponent<Text>().text = "PJ Mode";
-            }
-        }*/
-    }
-
-    void Update()
-    {
-
     }
 }

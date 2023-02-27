@@ -17,6 +17,10 @@ public class Client : MonoBehaviour
     StreamWriter writer;
     StreamReader reader;
 
+    private void Start()
+    {
+        ConnectToServer();
+    }
     public void ConnectToServer()
     {
         // 이미 연결되었다면 함수 무시
@@ -74,14 +78,11 @@ public class Client : MonoBehaviour
     public void OnSendButton(string SendInput) // 문자를 계속 보내면서 서버가 열렸는지 확인 
     {
         if (SendInput.Trim() == "") return;
-       // SendInput = "c";
         string message = SendInput;
 
         Send(message);
 
     }
-
-
     void OnApplicationQuit()
     {
         CloseSocket();

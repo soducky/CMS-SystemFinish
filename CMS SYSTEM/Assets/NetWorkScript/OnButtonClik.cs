@@ -31,7 +31,7 @@ public class OnButtonClik : MonoBehaviour
 
     public void ReadyStart()
     {
-        if (DataManager.Instance.data.ImageLight[tmp -1] == true)
+        if (DataManager.Instance.data.ImageLight[tmp - 1] == true)
         {
             ImageChange();
         }
@@ -59,7 +59,7 @@ public class OnButtonClik : MonoBehaviour
                 PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
                 PJ.PowerOn();
 
-                if(PJ.value == 1)
+                if (PJ.value == 1)
                 {
                     ImageChange();
                     DataManager.Instance.data.ImageLight[tmp - 1] = true;
@@ -90,7 +90,7 @@ public class OnButtonClik : MonoBehaviour
 
         for (int i = 0; i < 6; i++)
         {
-             address_bytes[i] = byte.Parse(macaddress.Substring(3 * i, 2), NumberStyles.HexNumber);
+            address_bytes[i] = byte.Parse(macaddress.Substring(3 * i, 2), NumberStyles.HexNumber);
         }
 
         var macaddress_block = dgram.AsSpan(6, 16 * 6);
@@ -100,7 +100,7 @@ public class OnButtonClik : MonoBehaviour
             address_bytes.CopyTo(macaddress_block.Slice(6 * i));
         }
 
-        udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[tmp-1])));
+        udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[tmp - 1])));
 
         Debug.Log("m_port : " + DataManager.Instance.data.Port[tmp - 1]);
         Debug.Log("macaddres : " + macaddress);

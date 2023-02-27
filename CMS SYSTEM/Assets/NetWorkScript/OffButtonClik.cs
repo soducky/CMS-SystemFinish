@@ -12,6 +12,7 @@ public class OffButtonClik : MonoBehaviour
 
     string _hostName;
     int _port;
+    public string Message;
 
     Button OffBtn;
     public Image GreenLight;
@@ -35,7 +36,7 @@ public class OffButtonClik : MonoBehaviour
 
     }
 
-    public void OffBtnClik() 
+    public void OffBtnClik()
     {
         OffBtnCapsule();
     }
@@ -45,7 +46,8 @@ public class OffButtonClik : MonoBehaviour
 
         if (DataManager.Instance.data.modeSelect[tmp - 1] == true) // PC 모드 
         {
-            Debug.Log("아직 준비중");
+            Message = DataManager.Instance.data.IPAddress[tmp - 1];
+            GameObject.FindWithTag("Server").GetComponent<Server>().OffBtn(Message);
         }
 
         else if (DataManager.Instance.data.modeSelect[tmp - 1] == false) // PJ 모드 

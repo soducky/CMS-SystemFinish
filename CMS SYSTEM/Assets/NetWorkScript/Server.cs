@@ -17,11 +17,25 @@ public class Server : MonoBehaviour
     TcpListener server;
     bool serverStarted;
 
+    private void Awake()
+    {
+        var obj = FindObjectsOfType<Server>();
+
+        if (obj.Length == 1)
+        {
+            DontDestroyOnLoad(obj[0]);
+        }
+        else
+        {
+            Destroy(obj[1]);
+        }
+    }
     private void Start()
     {
-        ServerCreate();
+        // ServerCreate();
 
-       // this.gameObject.GetComponent<Client>().ConnectToServer();
+        // this.gameObject.GetComponent<Client>().ConnectToServer();
+        ServerCreate();
     }
 
     public void ServerCreate()
@@ -74,7 +88,7 @@ public class Server : MonoBehaviour
         for (int i = 0; i < disconnectList.Count - 1; i++)
         {
             Broadcast($"{disconnectList[i].clientName} 연결이 끊어졌습니다", clients); // 이 부분 수정
-
+                                                                              //   if(disconnectList[i].clientName == )
             clients.Remove(disconnectList[i]);
             disconnectList.RemoveAt(i);
         }
@@ -113,7 +127,7 @@ public class Server : MonoBehaviour
         clients.Add(new ServerClient(listener.EndAcceptTcpClient(ar)));
         StartListening();
 
- 
+
         Broadcast("%NAME", new List<ServerClient>() { clients[clients.Count - 1] });
         // 비동기로 계속 들으면서 클라이언트에게 받은 메시지를 브로드캐스트를 통해서 연결된 모두에게 보냄
     }
@@ -147,7 +161,14 @@ public class Server : MonoBehaviour
             }
         }
     }
+
+    public void OffBtn(string Sendmessage)
+    {
+        Broadcast(Sendmessage, clients);
+        Debug.Log("종료신호를 보냈습니다.");
+    }
 }
+
 
 
 public class ServerClient

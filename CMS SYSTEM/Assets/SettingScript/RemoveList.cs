@@ -24,233 +24,12 @@ public class RemoveList : MonoBehaviour, IPointerClickHandler // 콜라이더 클릭 �
 
     private void Start()
     {
+        ZoneNameInput();
+    }
 
-        switch (this.gameObject.name)
-        {
-            case "InputFieldPrefab":
-                ZoneName.SetActive(true); 
-                break;
-
-            case "Clone2":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone3":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone4":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone5":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone6":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone7":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone8":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone9":
-                ZoneName.SetActive(true);
-                break;
-
-            case "Clone10":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone11":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone12":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone13":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone14":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone15":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone16":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone17":
-                ZoneName.SetActive(true);
-                break;
-
-            case "Clone18":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone19":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone20":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone21":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone22":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone23":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone24":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone25":
-                ZoneName.SetActive(true);
-                break;
-
-            case "Clone26":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone27":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone28":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone29":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone30":
-                ZoneName.SetActive(false);
-                break;
-            case "Clone31":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone32":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone33":
-                ZoneName.SetActive(true);
-                break;
-
-            case "Clone34":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone35":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone36":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone37":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone38":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone39":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone40":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone41":
-                ZoneName.SetActive(true);
-                break;
-
-            case "Clone42":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone43":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone44":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone45":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone46":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone47":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone48":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone49":
-                ZoneName.SetActive(true);
-                break;
-
-            case "Clone50":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone51":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone52":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone53":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone54":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone55":
-                ZoneName.SetActive(false);
-                break;
-
-            case "Clone56":
-                ZoneName.SetActive(false);
-                break;
-        } // 각 오브젝트에 이름을 기준으로 Zone영역 활성화 or 비활성화 => 활성화는 8의 배수 단위로 참 
-
+    private void Update()
+    {
+        ZoneNameInput(); // 삭제할때 zoneName이 두개 생성되는 오류가 발생하므로 update문을 돌면서 체크 
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -642,6 +421,236 @@ public class RemoveList : MonoBehaviour, IPointerClickHandler // 콜라이더 클릭 �
         ScrollView.SetActive(false); // 스크롤뷰 끄기 
 
         DeleteCompleteText.SetActive(true); // 오케이 버튼 누르면 삭제완료안내 메세지 출력
+
+    }
+
+    public void ZoneNameInput()
+    {
+        switch (this.gameObject.name)
+        {
+            case "InputFieldPrefab":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone2":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone3":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone4":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone5":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone6":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone7":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone8":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone9":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone10":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone11":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone12":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone13":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone14":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone15":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone16":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone17":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone18":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone19":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone20":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone21":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone22":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone23":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone24":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone25":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone26":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone27":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone28":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone29":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone30":
+                ZoneName.SetActive(false);
+                break;
+            case "Clone31":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone32":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone33":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone34":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone35":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone36":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone37":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone38":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone39":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone40":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone41":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone42":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone43":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone44":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone45":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone46":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone47":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone48":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone49":
+                ZoneName.SetActive(true);
+                break;
+
+            case "Clone50":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone51":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone52":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone53":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone54":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone55":
+                ZoneName.SetActive(false);
+                break;
+
+            case "Clone56":
+                ZoneName.SetActive(false);
+                break;
+        } // 각 오브젝트에 이름을 기준으로 Zone영역 활성화 or 비활성화 => 활성화는 8의 배수 단위로 참 
 
     }
 
