@@ -32,9 +32,6 @@ public class Server : MonoBehaviour
     }
     private void Start()
     {
-        // ServerCreate();
-
-        // this.gameObject.GetComponent<Client>().ConnectToServer();
         ServerCreate();
     }
 
@@ -87,8 +84,17 @@ public class Server : MonoBehaviour
 
         for (int i = 0; i < disconnectList.Count - 1; i++)
         {
-            Broadcast($"{disconnectList[i].clientName} 연결이 끊어졌습니다", clients); // 이 부분 수정
-                                                                              //   if(disconnectList[i].clientName == )
+            Broadcast($"{disconnectList[i].clientName} 연결이 끊어졌습니다", clients);  // 이 부분 수정
+
+            for (int k = 0; k < 56; k++) 
+            {
+                if (disconnectList[i].clientName == DataManager.Instance.data.IPAddress[k])
+                {
+                    // DataManager.Instance.data.ImageLight[k] = false;
+                    Debug.Log(k);
+                }
+
+            }
             clients.Remove(disconnectList[i]);
             disconnectList.RemoveAt(i);
         }
@@ -139,7 +145,7 @@ public class Server : MonoBehaviour
         {
             c.clientName = data.Split('|')[1];
             Broadcast($"{c.clientName} 연결되었습니다", clients); // 연결된거를 클라이언트들에게 보내줌 
-            return;
+            return;             // 이 부분 수정
         }
 
         Broadcast($"{c.clientName} : {data}", clients);
