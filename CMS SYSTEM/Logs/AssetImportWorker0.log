@@ -15,7 +15,7 @@ C:/Users/opem2/OneDrive/문서/GitHub/CMS-SystemFinish/CMS SYSTEM
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49829
+50406
 Successfully changed project path to: C:/Users/opem2/OneDrive/문서/GitHub/CMS-SystemFinish/CMS SYSTEM
 C:/Users/opem2/OneDrive/문서/GitHub/CMS-SystemFinish/CMS SYSTEM
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/opem2/OneDrive/문서/GitHub/CMS-SystemFinish/CMS SYSTEM
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 158.95 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 61.94 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.14f1 (eee1884e7226)
 [Subsystems] Discovering subsystems at path D:/2021.3.14f1-x86_64/Editor/Data/Resources/UnitySubsystems
@@ -63,75 +63,75 @@ Initialize mono
 Mono path[0] = 'D:/2021.3.14f1-x86_64/Editor/Data/Managed'
 Mono path[1] = 'D:/2021.3.14f1-x86_64/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/2021.3.14f1-x86_64/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56484
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2021.3.14f1-x86_64/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.090199 seconds.
+Registered in 0.001647 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 59.08 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 57.00 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.209 seconds
+- Completed reload, in  0.418 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3209ms)
-		BeginReloadAssembly (2342ms)
+	ReloadAssembly (418ms)
+		BeginReloadAssembly (47ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (553ms)
-			LoadAssemblies (2341ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (302ms)
+			LoadAssemblies (47ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (314ms)
+			SetupTypeCache (69ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (19ms)
-			SetupLoadedEditorAssemblies (186ms)
+			SetupLoadedEditorAssemblies (182ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (59ms)
+				RefreshPlugins (57ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (86ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
+				ProcessInitializeOnLoadAttributes (88ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.774602 seconds.
+Registered in 0.004421 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\opem2\OneDrive\문서\GitHub\CMS-SystemFinish\CMS SYSTEM\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\opem2\OneDrive\문서\GitHub\CMS-SystemFinish\CMS SYSTEM\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.544 seconds
+- Completed reload, in  0.680 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3545ms)
-		BeginReloadAssembly (78ms)
+	ReloadAssembly (680ms)
+		BeginReloadAssembly (77ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (3355ms)
-			LoadAssemblies (1917ms)
+		EndReloadAssembly (521ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (522ms)
+			SetupTypeCache (168ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (846ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (239ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (215ms)
-				ProcessInitializeOnLoadMethodAttributes (565ms)
+				ProcessInitializeOnLoadAttributes (156ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -139,13 +139,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.64 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3417 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 28 unused Assets / (113.4 KB). Loaded Objects now: 3874.
 Memory consumption went from 117.4 MB to 117.3 MB.
-Total: 2.685100 ms (FindLiveObjects: 0.225600 ms CreateObjectMapping: 0.160800 ms MarkObjects: 2.202600 ms  DeleteObjects: 0.095600 ms)
+Total: 2.670800 ms (FindLiveObjects: 0.224100 ms CreateObjectMapping: 0.121300 ms MarkObjects: 2.241300 ms  DeleteObjects: 0.083500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,101 +159,49 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 469.661446 seconds.
-  path: Assets/Img
-  artifactKey: Guid(e27741d4b1d900c46b8d5e9c852cbf10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img using Guid(e27741d4b1d900c46b8d5e9c852cbf10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af728a810a20b97d7ed2920f3a1f74b') in 0.011522 seconds 
+  Time since last request: 1692.679886 seconds.
+  path: Assets/MainScript/CMS_Name.cs
+  artifactKey: Guid(9a312774448b3434faa5fea119e7f0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainScript/CMS_Name.cs using Guid(9a312774448b3434faa5fea119e7f0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61418d922c25e8f7875309a3b699ec89') in 0.019124 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.194308 seconds.
-  path: Assets/Img/AllDeleteButton.png
-  artifactKey: Guid(57c370f711997244b88d320f12ba92cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/AllDeleteButton.png using Guid(57c370f711997244b88d320f12ba92cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21cb414b03490cbfe64bc4b931735821') in 0.192558 seconds 
+  Time since last request: 2.456021 seconds.
+  path: Assets/MainScript/LoadObject.cs
+  artifactKey: Guid(98a298c22f0cabe4caa582c151c5a06d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainScript/LoadObject.cs using Guid(98a298c22f0cabe4caa582c151c5a06d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70fc7455d89fd4a6caef1f3a9a12132') in 0.004685 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.008409 seconds.
-  path: Assets/Img/CancelButtonIcon.png
-  artifactKey: Guid(1f1a78d623890354998025190e1ff0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/CancelButtonIcon.png using Guid(1f1a78d623890354998025190e1ff0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37eca8c2d8ee1c1c779b23a2938a5418') in 0.025914 seconds 
+  Time since last request: 2.899546 seconds.
+  path: Assets/MainScript/ZoneNameTitle.cs
+  artifactKey: Guid(f356265bc8d0d2b4b96619427c128a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainScript/ZoneNameTitle.cs using Guid(f356265bc8d0d2b4b96619427c128a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95542a1de7340cfdad68a65fffd11c26') in 0.004679 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Img/OkayButtonIcon.png
-  artifactKey: Guid(26483e9137ba5eb498c90be493b3db0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/OkayButtonIcon.png using Guid(26483e9137ba5eb498c90be493b3db0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '452c8135f210d4fafc6b404d61ecb447') in 0.024224 seconds 
+  Time since last request: 7.010243 seconds.
+  path: Assets/SettingScript/AllDataDeleteButton.cs
+  artifactKey: Guid(a66df6c7749dd454d8f4e7f831785e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SettingScript/AllDataDeleteButton.cs using Guid(a66df6c7749dd454d8f4e7f831785e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f8f502a5117f3c393d86d0a25b9a0c') in 0.004609 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Img/enter (1) 1.png
-  artifactKey: Guid(a60d4ff9da60736489f59938d5244f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/enter (1) 1.png using Guid(a60d4ff9da60736489f59938d5244f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7babe6ddd5e5472765a68c8724befbf') in 0.024407 seconds 
+  Time since last request: 4.737629 seconds.
+  path: Assets/SettingScript/DeleteButton.cs
+  artifactKey: Guid(311dc7bfe51a1ce4a90f802d8f18a15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SettingScript/DeleteButton.cs using Guid(311dc7bfe51a1ce4a90f802d8f18a15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b7288817826cb6782286e2adf0e7361') in 0.004975 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Img/enter (1).png
-  artifactKey: Guid(6146e903b41111f44ba8332f4e0b5f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/enter (1).png using Guid(6146e903b41111f44ba8332f4e0b5f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27055b8ebc030734648f9061461b26df') in 0.021650 seconds 
+  Time since last request: 3.547482 seconds.
+  path: Assets/SettingScript/DeleteComplete.cs
+  artifactKey: Guid(1c6decc137ca2dd48b57f1b536180498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SettingScript/DeleteComplete.cs using Guid(1c6decc137ca2dd48b57f1b536180498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1abd1c70e2577bd3bcdd3ff8661bdc8') in 0.004644 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Img/check.png
-  artifactKey: Guid(848c31c3bf61dc1469b7fff81336c312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/check.png using Guid(848c31c3bf61dc1469b7fff81336c312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74bfdf79f32a00e40ac7e2fc122473de') in 0.019719 seconds 
+  Time since last request: 16.135606 seconds.
+  path: Assets/SettingScript/RemoveList.cs
+  artifactKey: Guid(9a50bcb48aa1da14e9850f8db8d1c64d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SettingScript/RemoveList.cs using Guid(9a50bcb48aa1da14e9850f8db8d1c64d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4823bc7c987f98313ff45b3ab9401c61') in 0.005513 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Img/DeleteButton.png
-  artifactKey: Guid(83d30596f88a2d749962ed7bea436d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/DeleteButton.png using Guid(83d30596f88a2d749962ed7bea436d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14ca970f91c1858ad0951355aa96fbe4') in 0.024561 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Img/free-icon-checkbox-8206354.png
-  artifactKey: Guid(8664d69f57bb75c4ea2435412629347f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/free-icon-checkbox-8206354.png using Guid(8664d69f57bb75c4ea2435412629347f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e80443722c3c43b6c7b6d0b04a84a2c') in 0.020031 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Img/on-off.png
-  artifactKey: Guid(b5644b618a485384a8f5200b8e60c037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/on-off.png using Guid(b5644b618a485384a8f5200b8e60c037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e50d8112c8702ea374963160527a56a5') in 0.025613 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Img/Plus.png
-  artifactKey: Guid(178746e7b08c8124381939697bbb51f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/Plus.png using Guid(178746e7b08c8124381939697bbb51f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a53ace4e262465493c0dd31928c5f138') in 0.020962 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Img/edit.png
-  artifactKey: Guid(d661b1bcafc000f44869b5b27604c421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/edit.png using Guid(d661b1bcafc000f44869b5b27604c421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e2e1a89a54f1c693138568a4f273a7') in 0.023351 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.160975 seconds.
-  path: Assets/Img/SaveButtonImg.png
-  artifactKey: Guid(b474d09e94c827049999752da0e0271e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/SaveButtonImg.png using Guid(b474d09e94c827049999752da0e0271e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7073c4e672cf1cb321ef20678d42375') in 0.022837 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.009440 seconds.
-  path: Assets/Img/settings_img.png
-  artifactKey: Guid(9fed76915ec01b94490d90b922a3442d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/settings_img.png using Guid(9fed76915ec01b94490d90b922a3442d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cadfd650c49970e76f9950b0f868d4c') in 0.019842 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Img/switch-on.png
-  artifactKey: Guid(34bc1d053215f0b45b3167d90d082abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/switch-on.png using Guid(34bc1d053215f0b45b3167d90d082abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef528ddb4788d5f94a80fc182d7ac615') in 0.033643 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.328698 seconds.
-  path: Assets/Img/VerticaLine.png
-  artifactKey: Guid(0d54e9ccf5a10fc48beb8106bb3ebc67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Img/VerticaLine.png using Guid(0d54e9ccf5a10fc48beb8106bb3ebc67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a77cd66e449a6a67951d502fedf18cfc') in 0.023707 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 12.695937 seconds.
+  path: Assets/SettingScript/SelectToggles.cs
+  artifactKey: Guid(f8ff8dfbfcdb0de4f84352e23b2de05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SettingScript/SelectToggles.cs using Guid(f8ff8dfbfcdb0de4f84352e23b2de05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f698339ad3342f475131e0122df57d88') in 0.004549 seconds 
