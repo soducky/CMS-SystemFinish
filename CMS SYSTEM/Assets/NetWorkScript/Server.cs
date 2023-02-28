@@ -86,15 +86,6 @@ public class Server : MonoBehaviour
         {
             Broadcast($"{disconnectList[i].clientName} 연결이 끊어졌습니다", clients);  // 이 부분 수정
 
-            for (int k = 0; k < 56; k++) 
-            {
-                if (disconnectList[i].clientName == DataManager.Instance.data.IPAddress[k])
-                {
-                    // DataManager.Instance.data.ImageLight[k] = false;
-                    Debug.Log(k);
-                }
-
-            }
             clients.Remove(disconnectList[i]);
             disconnectList.RemoveAt(i);
         }

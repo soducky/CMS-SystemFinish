@@ -17,6 +17,7 @@ TagManager:
   - Hide
   - DeleteComplete
   - BackGround
+  - Server
   layers:
   - Default
   - TransparentFX

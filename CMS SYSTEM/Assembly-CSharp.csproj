@@ -68,6 +68,7 @@
     <Compile Include="Assets\PJLinkScript\Message.cs" />
     <Compile Include="Assets\MainScript\ZoneNameLoad.cs" />
     <Compile Include="Assets\PJLinkScript\ProjectorConnectionException.cs" />
+    <Compile Include="Assets\StartScript\LoadStart.cs" />
     <Compile Include="Assets\SettingScript\ModeSelectToggle.cs" />
     <Compile Include="Assets\MainScript\ZoneNameTitle.cs" />
     <Compile Include="Assets\SettingScript\SelectToggles.cs" />
@@ -83,7 +84,6 @@
     <Compile Include="Assets\PJLinkScript\CommandResponse.cs" />
     <Compile Include="Assets\SettingScript\DeleteButton.cs" />
     <Compile Include="Assets\PJLinkScript\PjlinkClient.cs" />
-    <Compile Include="Assets\StartScript\LoadStart.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TTF\LiberationSans - OFL.txt" />
