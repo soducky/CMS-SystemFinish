@@ -86,6 +86,12 @@ public class Server : MonoBehaviour
         {
             Broadcast($"{disconnectList[i].clientName} 연결이 끊어졌습니다", clients);  // 이 부분 수정
 
+            if (disconnectList[i].clientName == DataManager.Instance.data.IPAddress[0])
+            {
+                DataManager.Instance.data.ImageLight[0] = false;
+                Debug.Log("끊어짐");
+            }
+
             clients.Remove(disconnectList[i]);
             disconnectList.RemoveAt(i);
         }
@@ -135,11 +141,20 @@ public class Server : MonoBehaviour
         if (data.Contains("&NAME"))
         {
             c.clientName = data.Split('|')[1];
+
             Broadcast($"{c.clientName} 연결되었습니다", clients); // 연결된거를 클라이언트들에게 보내줌 
+
+            if (c.clientName == DataManager.Instance.data.IPAddress[0])
+            {
+                DataManager.Instance.data.ImageLight[0] = true;
+            }
             return;             // 이 부분 수정
         }
 
-        Broadcast($"{c.clientName} : {data}", clients);
+      //  Broadcast($"{c.clientName} : {data}", clients); 
+      // 기존 채팅방 기능 
+        Broadcast(data, clients);
+
     }
 
     void Broadcast(string data, List<ServerClient> cl)
@@ -162,7 +177,6 @@ public class Server : MonoBehaviour
     public void OffBtn(string Sendmessage)
     {
         Broadcast(Sendmessage, clients);
-        Debug.Log("종료신호를 보냈습니다.");
     }
 }
 

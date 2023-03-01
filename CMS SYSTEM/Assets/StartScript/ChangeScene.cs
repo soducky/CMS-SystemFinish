@@ -13,11 +13,13 @@ public class ChangeScene : MonoBehaviour
 
     public void SettingBtnClik()
     {
+        DataManager.Instance.SaveGameData();
         SceneManager.LoadScene("SettingScene"); // 설정 씬으로 이동
     }
 
     public void BackButton()
     {
+        DataManager.Instance.SaveGameData();
         SceneManager.LoadScene("MainScene"); // 메인 씬으로 이동
     }
 
@@ -29,6 +31,7 @@ public class ChangeScene : MonoBehaviour
 
     public void BackStartButton()
     {
+        DataManager.Instance.SaveGameData();
         SceneManager.LoadScene("StartScene"); // 스타트 씬으로 이동
     }
 

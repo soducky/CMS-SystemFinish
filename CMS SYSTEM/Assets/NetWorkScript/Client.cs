@@ -64,7 +64,15 @@ public class Client : MonoBehaviour
             return;
         }
 
-        Debug.Log(data);
+        if (data == DataManager.Instance.data.IPAddress[0] + 1)
+        {
+            Debug.Log(DataManager.Instance.data.IPAddress[0] + 1);
+        }
+        if (data == DataManager.Instance.data.IPAddress[0] + 0)
+        {
+            Debug.Log(DataManager.Instance.data.IPAddress[0] + 0);
+        }
+
     }
 
     void Send(string data)

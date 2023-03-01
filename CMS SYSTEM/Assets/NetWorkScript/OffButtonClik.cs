@@ -36,6 +36,14 @@ public class OffButtonClik : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (DataManager.Instance.data.ImageLight[tmp - 1] == false)
+        {
+            ImageChange();
+        }
+    }
+
     public void OffBtnClik()
     {
         OffBtnCapsule();

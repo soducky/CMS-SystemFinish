@@ -29,6 +29,13 @@ public class OnButtonClik : MonoBehaviour
         OnBtn.onClick.AddListener(OnBtnClik);
     }
 
+    public void Update()
+    {
+        if (DataManager.Instance.data.ImageLight[tmp - 1] == true)
+        {
+            ImageChange();
+        }
+    }
     public void ReadyStart()
     {
         if (DataManager.Instance.data.ImageLight[tmp - 1] == true)
