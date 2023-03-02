@@ -21,6 +21,11 @@ public class ModeSelectToggle : MonoBehaviour // ModeToggle 오브젝트에 대입
         ChangeUIToggle(); // 씬 이동하고 다시 돌아올떄 저장된 데이터에 맞춰 업데이트
     }
 
+    private void Update()
+    {
+        ChangeUIToggle();
+    }
+
     public void OnToggleValueChanged(bool boolean) // 토클 클릭 이벤트
     {
         if (boolean == true) // 참

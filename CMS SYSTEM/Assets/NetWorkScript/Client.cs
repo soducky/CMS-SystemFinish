@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.IO;
 using System;
 
+
 public class Client : MonoBehaviour
 {
     string clientName;
@@ -60,19 +61,25 @@ public class Client : MonoBehaviour
         if (data == "%NAME")
         {
             clientName = DataManager.Instance.data.Devel_Name;
-            Send($"&NAME|{clientName}");
+            Send($"&NAME|{clientName}"); // 이름 보내기 
             return;
         }
 
-        if (data == DataManager.Instance.data.IPAddress[0] + 1)
+        for (int k = 0; k < DataManager.Instance.data.i; k++)
         {
-            Debug.Log(DataManager.Instance.data.IPAddress[0] + 1);
-        }
-        if (data == DataManager.Instance.data.IPAddress[0] + 0)
-        {
-            Debug.Log(DataManager.Instance.data.IPAddress[0] + 0);
+            if (data == DataManager.Instance.data.IPAddress[k]+0)   // 클라이언트 나가는거 확인
+            {
+                DataManager.Instance.data.ImageLight[k] = false; // 이미지교체
+            }
         }
 
+        for (int k = 0; k < DataManager.Instance.data.i; k++)
+        {
+            if (data == DataManager.Instance.data.IPAddress[k]+1)
+            {
+                DataManager.Instance.data.ImageLight[k] = true;   // 클라이언트 접속 확인 후 이미지 교체
+            }
+        }
     }
 
     void Send(string data)

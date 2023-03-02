@@ -22,10 +22,10 @@ public class SelectToggles : MonoBehaviour
         LoadToggleData(); // 씬 이동하고 다시 돌아올떄 저장된 데이터에 맞춰 업데이트
     }
 
-   /* private void Update()
+    private void Update()
     {
-        LoadToggleData();
-    }*/  
+        LoadToggleData(); // 토글 updata문 돌면서 계속 바꿔주기 
+    }
    // 토글 오류나면 사용 
     public void Togglestart()
     {
