@@ -1,43 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO.Ports;
-
+using Uduino;
 
 public class AduinoOFF : MonoBehaviour
 {
-    SerialPort arduino = new SerialPort("COM3", 9600);
 
-    // Start is called before the first frame update
     void Start()
     {
-        arduino.Open();
-     //   arduino.ReadTimeout = 5000;
+        UduinoManager.Instance.OnDataReceived += DataReceived;
     }
 
-    // Update is called once per frame
-    void Update()
+    void DataReceived(string data, UduinoDevice board)
     {
-        if (arduino.IsOpen)
+        if(data=="1")
         {
-            try
-            {
-                CmsOffControl(arduino.ReadByte());
-            }
-
-            catch(System.Exception) 
-            {
-                throw;
-            }
-
+            GameObject.FindWithTag("Server").GetComponent<Server>().AllOffBtn();
         }
-
     }
 
-    void CmsOffControl(int Num)
-    {
-        Debug.Log(Num);
-    }
 }
 
 

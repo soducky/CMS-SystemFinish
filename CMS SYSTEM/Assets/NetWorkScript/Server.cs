@@ -165,6 +165,24 @@ public class Server : MonoBehaviour
     {
         Broadcast(Sendmessage, clients);
     }
+
+    public void AllOffBtn()
+    {
+        for(int k=0; k<DataManager.Instance.data.i; k++)
+        {
+            if (DataManager.Instance.data.IPAddress[k] != "0")
+            {
+                string mes = DataManager.Instance.data.IPAddress[k];
+
+                Broadcast(mes, clients);
+            }
+
+            else if(DataManager.Instance.data.IPAddress[k] == "0")
+            {
+                return;
+            }
+        }
+    }
 }
 
 

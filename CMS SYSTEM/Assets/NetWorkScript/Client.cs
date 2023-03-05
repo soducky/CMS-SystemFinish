@@ -80,6 +80,7 @@ public class Client : MonoBehaviour
                 DataManager.Instance.data.ImageLight[k] = true;   // 클라이언트 접속 확인 후 이미지 교체
             }
         }
+ 
     }
 
     void Send(string data)

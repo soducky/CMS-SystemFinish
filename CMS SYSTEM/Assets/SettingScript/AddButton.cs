@@ -137,7 +137,7 @@ public class AddButton : MonoBehaviour // 플러스 버튼 누를시 작동하는 스크립트
     {
         clonelist[j].transform.GetChild(2).GetComponent<InputField>().text = null;
         clonelist[j].transform.GetChild(1).GetComponent<InputField>().text = null;
-        clonelist[j].transform.GetChild(0).GetComponent<InputField>().text = null;
+        clonelist[j].transform.GetChild(0).GetComponent<InputField>().text = "0";
         clonelist[j].transform.GetChild(3).GetComponent<InputField>().text = "0";
         clonelist[j].transform.GetChild(7).GetComponent<InputField>().text = null;
     }
