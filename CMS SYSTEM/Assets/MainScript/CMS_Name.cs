@@ -14,9 +14,4 @@ public class CMS_Name : MonoBehaviour
             cms_text_name[i].text = DataManager.Instance.data.Name[i]; // i번째 의 이름 리스트를 가져와서 text에 대입
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -65,9 +65,4 @@ public class ZoneNameLoad : MonoBehaviour
             Zone1InfoText[0].text = DataManager.Instance.data.ZoneName[0];
         }
     }
-
-    void Update()
-    {
-        
-    }
 }

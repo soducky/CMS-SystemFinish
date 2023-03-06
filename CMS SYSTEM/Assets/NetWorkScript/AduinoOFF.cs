@@ -5,7 +5,6 @@ using Uduino;
 
 public class AduinoOFF : MonoBehaviour
 {
-
     void Start()
     {
         UduinoManager.Instance.OnDataReceived += DataReceived;

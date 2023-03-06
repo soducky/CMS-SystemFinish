@@ -25,6 +25,19 @@ public class ChangeScene : MonoBehaviour
 
     public void BackAndSaveButton() // 설정페이지에서 메인페이지로 이동시 데이터 저장을 위해 
     {
+
+        List<GameObject> clonelist = GameObject.FindWithTag("AddButton").GetComponent<AddButton>().clonelist;
+
+        for (int c = 0; c < clonelist.Count; c++)
+        {
+            if (clonelist[c].transform.GetChild(0).GetComponent<InputField>().text == "" ||
+                clonelist[c].transform.GetChild(3).GetComponent<InputField>().text == "")
+            {
+                clonelist[c].transform.GetChild(0).GetComponent<InputField>().text = "0";
+                clonelist[c].transform.GetChild(3).GetComponent<InputField>().text = "0";
+            }
+        }
+
         GameObject.Find("InputFieldPrefab").GetComponent<InputData>().Save();  // 저장 후 메인 씬으로 이동
         SceneManager.LoadScene("MainScene");
     }

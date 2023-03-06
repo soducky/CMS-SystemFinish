@@ -396,7 +396,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -654,7 +654,7 @@ MonoBehaviour:
   DeleteCompleteText: {fileID: 0}
   AllDeleteBtn: {fileID: 0}
   DeleteBtn: {fileID: 0}
-  ZoneName: {fileID: 0}
+  ZoneName: {fileID: 775210503}
 --- !u!114 &923256880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1392,8 +1392,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 13.3, y: 0}
-  m_SizeDelta: {x: 258, y: 79}
+  m_AnchoredPosition: {x: 8.938, y: 0}
+  m_SizeDelta: {x: 126.11, y: 79}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1925766937652661232
 CanvasRenderer:
@@ -1620,7 +1620,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 10.133, y: 0}
-  m_SizeDelta: {x: 258, y: 79}
+  m_SizeDelta: {x: 187.22, y: 79}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1925766938258094991
 CanvasRenderer:

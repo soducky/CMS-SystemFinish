@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class LoadObject : MonoBehaviour
 {
     public GameObject[] CMSList; // CMS 배열 
-    public GameObject[] ZoneList;
+    //public GameObject[] ZoneList;
     public GameObject UduinoObj;
 
     private void Awake()
@@ -27,6 +27,6 @@ public class LoadObject : MonoBehaviour
             }
         }
 
-        UduinoObj.transform.GetChild(0).GetChild(1).transform.position = new Vector2(1300f, 0); // Uduino ui 밖으로 치우기
+        UduinoObj.transform.GetChild(0).GetChild(1).transform.position = new Vector2(6000f, 0); // Uduino ui 밖으로 치우기
     }
 }
