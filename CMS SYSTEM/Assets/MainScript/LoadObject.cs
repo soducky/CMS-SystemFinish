@@ -29,4 +29,19 @@ public class LoadObject : MonoBehaviour
 
         UduinoObj.transform.GetChild(0).GetChild(1).transform.position = new Vector2(6000f, 0); // Uduino ui 밖으로 치우기
     }
+
+    private void OnApplicationQuit()
+    {
+        DataManager.Instance.data.ChangeSceneAuto = false;
+
+        for (int k = 0; k < DataManager.Instance.data.i; k++) 
+        {
+            if (DataManager.Instance.data.modeSelect[k] == true)
+            {
+                DataManager.Instance.data.ImageLight[k] = false;
+            } 
+        }
+
+        DataManager.Instance.SaveGameData();
+    }
 }

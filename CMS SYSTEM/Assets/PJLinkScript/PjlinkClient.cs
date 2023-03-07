@@ -5,6 +5,7 @@ using System.Threading;
 using System.Net.Sockets;
 using System.IO;
 using System.Diagnostics;
+using UnityEngine.SceneManagement;
 
 namespace PjlinkClient
 {

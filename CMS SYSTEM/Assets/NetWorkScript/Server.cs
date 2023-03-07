@@ -161,7 +161,7 @@ public class Server : MonoBehaviour
         }
     }
 
-    public void OffBtn(string Sendmessage)
+  /*  public void OffBtn(string Sendmessage)
     {
         Broadcast(Sendmessage, clients);
     }
@@ -182,7 +182,7 @@ public class Server : MonoBehaviour
                 return;
             }
         }
-    }
+    }*/
 }
 
 

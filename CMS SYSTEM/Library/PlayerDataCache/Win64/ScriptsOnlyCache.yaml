@@ -26,6 +26,8 @@ ScriptsOnlyBuild:
     - Uduino.UduinoManager
     - ZoneNameLoad
     - ZoneNameTitle
+    - ZoneOff
+    - ZoneOn
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -87,8 +89,11 @@ ScriptsOnlyBuild:
     fullTypeName: Carousel
     methodName: ContentsPosition
   - assembly: Assembly-CSharp
-    fullTypeName: Carousel
-    methodName: ContentsPosition
+    fullTypeName: ZoneOff
+    methodName: Zone1OffBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOff
+    methodName: Zone7OffBtnClik
   - assembly: Assembly-CSharp
     fullTypeName: Carousel
     methodName: ContentsPosition
@@ -98,9 +103,42 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Carousel
     methodName: ContentsPosition
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOn
+    methodName: Zone2OnBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: Carousel
+    methodName: ContentsPosition
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOn
+    methodName: Zone7OnBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOn
+    methodName: Zone1OnBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOn
+    methodName: Zone5OnBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOff
+    methodName: Zone2OffBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOn
+    methodName: Zone3OnBtnClik
   - assembly: Assembly-CSharp
     fullTypeName: ChangeScene
     methodName: SettingBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOn
+    methodName: Zone4OnBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOff
+    methodName: Zone4OffBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOff
+    methodName: Zone6OffBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOff
+    methodName: Zone5OffBtnClik
   - assembly: Assembly-CSharp
     fullTypeName: Carousel
     methodName: ContentsPosition
@@ -110,6 +148,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ChangeScene
     methodName: BackStartButton
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOff
+    methodName: Zone3OffBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: ZoneOn
+    methodName: Zone6OnBtnClik
   - assembly: Assembly-CSharp
     fullTypeName: DeveloperModeEnter
     methodName: EnterDeveloperBtn
@@ -187,33 +231,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3552}
     - Class: 114
-      Script: {instanceID: 4026}
+      Script: {instanceID: 3722}
     - Class: 114
-      Script: {instanceID: 4298}
+      Script: {instanceID: 4028}
     - Class: 114
-      Script: {instanceID: 5258}
+      Script: {instanceID: 4300}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 5260}
     - Class: 114
-      Script: {instanceID: 5618}
+      Script: {instanceID: 5468}
     - Class: 114
-      Script: {instanceID: 5952}
+      Script: {instanceID: 5620}
     - Class: 114
-      Script: {instanceID: 6220}
+      Script: {instanceID: 5954}
     - Class: 114
-      Script: {instanceID: 6468}
+      Script: {instanceID: 6222}
     - Class: 114
-      Script: {instanceID: 6480}
+      Script: {instanceID: 6470}
     - Class: 114
-      Script: {instanceID: 6830}
+      Script: {instanceID: 6482}
     - Class: 114
-      Script: {instanceID: 7556}
+      Script: {instanceID: 6832}
     - Class: 114
-      Script: {instanceID: 7604}
+      Script: {instanceID: 7558}
     - Class: 114
-      Script: {instanceID: 7746}
+      Script: {instanceID: 7606}
     - Class: 114
-      Script: {instanceID: 7974}
+      Script: {instanceID: 7614}
+    - Class: 114
+      Script: {instanceID: 7750}
+    - Class: 114
+      Script: {instanceID: 7978}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -286,29 +334,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3558}
     - Class: 114
-      Script: {instanceID: 4026}
+      Script: {instanceID: 4028}
     - Class: 114
-      Script: {instanceID: 5338}
+      Script: {instanceID: 5340}
     - Class: 114
-      Script: {instanceID: 5592}
+      Script: {instanceID: 5594}
     - Class: 114
-      Script: {instanceID: 5618}
+      Script: {instanceID: 5620}
     - Class: 114
-      Script: {instanceID: 5952}
+      Script: {instanceID: 5954}
     - Class: 114
-      Script: {instanceID: 6070}
+      Script: {instanceID: 6072}
     - Class: 114
-      Script: {instanceID: 6468}
+      Script: {instanceID: 6470}
     - Class: 114
-      Script: {instanceID: 6480}
+      Script: {instanceID: 6482}
     - Class: 114
-      Script: {instanceID: 6920}
+      Script: {instanceID: 6922}
     - Class: 114
-      Script: {instanceID: 7604}
+      Script: {instanceID: 7606}
     - Class: 114
-      Script: {instanceID: 8106}
+      Script: {instanceID: 8110}
     - Class: 114
-      Script: {instanceID: 8272}
+      Script: {instanceID: 8276}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -379,25 +427,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3552}
     - Class: 114
-      Script: {instanceID: 4026}
+      Script: {instanceID: 4028}
     - Class: 114
-      Script: {instanceID: 4536}
+      Script: {instanceID: 4538}
     - Class: 114
-      Script: {instanceID: 4828}
+      Script: {instanceID: 4830}
     - Class: 114
-      Script: {instanceID: 4966}
+      Script: {instanceID: 4968}
     - Class: 114
-      Script: {instanceID: 5618}
+      Script: {instanceID: 5620}
     - Class: 114
-      Script: {instanceID: 5952}
+      Script: {instanceID: 5954}
     - Class: 114
-      Script: {instanceID: 6468}
+      Script: {instanceID: 6470}
     - Class: 114
-      Script: {instanceID: 6480}
+      Script: {instanceID: 6482}
     - Class: 114
-      Script: {instanceID: 6830}
+      Script: {instanceID: 6832}
     - Class: 114
-      Script: {instanceID: 7604}
+      Script: {instanceID: 7606}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -849,6 +897,12 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 32c6e14dac1c21f81991b0848058625a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ZoneOn
+  - hash:
+      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Flow.dll
     namespaceName: Unity.VisualScripting
@@ -981,7 +1035,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerClickMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 9543879df12cad470805543746e6bc6b
+      Hash: 5c20b8170499c1b20cf14a725a4d4019
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LoadStart
@@ -1125,7 +1179,7 @@ ScriptsOnlyBuild:
     className: MultipleArduino
   - hash:
       serializedVersion: 2
-      Hash: 7f71f32ca25814f89f6f095ee441941b
+      Hash: af0338cf591b1f97a3d517fc8cd99aa4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DataManager
@@ -1377,6 +1431,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: dec9675055b9b9ecbf8af168c882fa65
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ZoneOff
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1431,7 +1491,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 49713ccdd23ce51003c9cd9b5366ddca
+      Hash: c2f7673581a93ce619037718bc57910e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DeveloperModeEnter
@@ -1494,5 +1554,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/SettingScene.unity
-  playerPath: "C:/Users/opem2/OneDrive/\uBC14\uD0D5 \uD654\uBA74/\uACC4\uC18D\uD560\uAC70/CMS
+  playerPath: "C:/Users/INDIGO-2020-11/Desktop/\uB9C8\uC2A4\uD130 PC\uBE4C\uB4DC/CMS
     SYSTEM.exe"

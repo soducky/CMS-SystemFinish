@@ -6,7 +6,6 @@ using System.Net.Sockets;
 using System.IO;
 using System;
 
-
 public class Client : MonoBehaviour
 {
     string clientName;
@@ -70,6 +69,7 @@ public class Client : MonoBehaviour
             if (data == DataManager.Instance.data.IPAddress[k]+0)   // 클라이언트 나가는거 확인
             {
                 DataManager.Instance.data.ImageLight[k] = false; // 이미지교체
+                DataManager.Instance.data.ZoneLight[k] = false;
             }
         }
 
@@ -78,6 +78,7 @@ public class Client : MonoBehaviour
             if (data == DataManager.Instance.data.IPAddress[k]+1)
             {
                 DataManager.Instance.data.ImageLight[k] = true;   // 클라이언트 접속 확인 후 이미지 교체
+                DataManager.Instance.data.ZoneLight[k] = true;
             }
         }
  
@@ -93,11 +94,27 @@ public class Client : MonoBehaviour
 
     public void OnSendButton(string SendInput) // 문자를 계속 보내면서 서버가 열렸는지 확인 
     {
-        if (SendInput.Trim() == "") return;
-        string message = SendInput;
+        string message = SendInput;     // 종료될때 종료신호 보내기
 
         Send(message);
+    }
 
+    public void AllOffBtn()
+    {
+        for (int k = 0; k < DataManager.Instance.data.i; k++)
+        {
+            if (DataManager.Instance.data.IPAddress[k] != "0")
+            {
+                string mes = DataManager.Instance.data.IPAddress[k];
+
+                Send(mes);
+            }
+
+            else if (DataManager.Instance.data.IPAddress[k] == "0")
+            {
+                return;
+            }
+        }
     }
     void OnApplicationQuit()
     {

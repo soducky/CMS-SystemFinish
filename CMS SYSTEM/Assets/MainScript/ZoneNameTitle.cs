@@ -64,9 +64,4 @@ public class ZoneNameTitle : MonoBehaviour
         }
 
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

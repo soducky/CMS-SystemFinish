@@ -37,17 +37,25 @@ public class Data // 씬 이동시 데이터 저장할 것들
         false, false, false, false, false, false, false, false, false, false,
         false, false, false, false, false, false }; // 이미지 교체 스위치 
 
+    public bool[] ZoneLight = new bool[] {true, true, true, true, true, true, true, true, true, true,
+         true, true, true, true, true, true, true, true, true, true,
+         true, true, true, true, true, true, true,true,true, true,
+         true,true,true,true,true,true,true,true,true,true,
+         true,true,true,true,true,true,true,true,true,true,
+         true,true,true,true,true,true};
+
+    public bool ChangeSceneAuto = false; // 처음 실행시 서버 연결을 위해 Main 페이지로 자동 이동 
+
     public string Devel_Port; // 개발자모드 서버의 포트 입력
     public string Devel_IP; // 개발자모드 서버의 IP 입력
     public string Devel_Name; // 개발자모드 서버의 이름 입력
+    public string Devel_Time; // 개발자모드 시간 딜레이 입력
 
     public List<String> Name = new List<String>(); // 각각의 정보들 리스트로 담음
     public List<String> MacAddress = new List<String>();
     public List<String> IPAddress = new List<String>();
     public List<string> Port = new List<string>();
     public List<String> ZoneName = new List<String>();
-
-
     
 }
 

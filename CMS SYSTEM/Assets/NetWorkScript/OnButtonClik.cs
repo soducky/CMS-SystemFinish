@@ -68,9 +68,8 @@ public class OnButtonClik : MonoBehaviour
 
                 if (PJ.value == 1)
                 {
-                    ImageChange();
                     DataManager.Instance.data.ImageLight[tmp - 1] = true;
-                    DataManager.Instance.SaveGameData();
+                    DataManager.Instance.data.ZoneLight[tmp - 1] = true;
                 }
             }
 

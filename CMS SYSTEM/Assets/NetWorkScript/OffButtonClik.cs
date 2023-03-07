@@ -18,6 +18,9 @@ public class OffButtonClik : MonoBehaviour
     public Image GreenLight;
     public Sprite RedLight;
 
+    private IEnumerator coroutine; // 코루틴(문자 보내기 위해) -> 태블릿과 통신
+    private bool isCoroutine = false; // 1분짜리 코루틴 update문에 사용 
+
     void Start()
     {
         OffBtnTitleTransfer();
@@ -42,8 +45,50 @@ public class OffButtonClik : MonoBehaviour
         {
             ImageChange();
         }
-    }
 
+        if (DataManager.Instance.data.modeSelect[tmp-1] == false) // PJ링크 모드 일때 
+        {
+            _port = int.Parse(DataManager.Instance.data.Port[tmp - 1]);
+            _hostName = DataManager.Instance.data.IPAddress[tmp - 1];
+
+            if (_port == 4352 && _hostName != "0")
+            {
+                if (!isCoroutine)
+                {
+                    coroutine = countTime(120f); // 120초 , 2분마다 반복
+                    StartCoroutine(coroutine);
+                }
+            }
+        }
+    }
+    IEnumerator countTime(float delayTime) // 코루틴 돌면서 문자 보내기
+    {
+        isCoroutine = true;
+        yield return new WaitForSeconds(delayTime);
+
+        _hostName = DataManager.Instance.data.IPAddress[tmp - 1];
+        _port = int.Parse(DataManager.Instance.data.Port[tmp - 1]);
+
+        PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+
+        PowerStatus Data = PJ.GetPowerStatus();
+
+        string TransData = Data.ToString();
+
+        if(TransData == "PoweredOn")
+        {
+            DataManager.Instance.data.ImageLight[tmp - 1] = true;
+            DataManager.Instance.data.ZoneLight[tmp - 1] = true;
+        }
+
+        else if (TransData == "PoweredOff" || TransData =="Unknown")
+        {
+            DataManager.Instance.data.ImageLight[tmp-1] = false;
+            DataManager.Instance.data.ZoneLight[tmp - 1] = false;
+        }
+
+        isCoroutine = false;
+    }
     public void OffBtnClik()
     {
         OffBtnCapsule();
@@ -55,7 +100,7 @@ public class OffButtonClik : MonoBehaviour
         if (DataManager.Instance.data.modeSelect[tmp - 1] == true) // PC 모드 
         {
             Message = DataManager.Instance.data.IPAddress[tmp - 1];
-            GameObject.FindWithTag("Server").GetComponent<Server>().OffBtn(Message);
+            GameObject.FindWithTag("Server").GetComponent<Client>().OnSendButton(Message);
         }
 
         else if (DataManager.Instance.data.modeSelect[tmp - 1] == false) // PJ 모드 
@@ -70,9 +115,8 @@ public class OffButtonClik : MonoBehaviour
 
                 if (PJ.value == 2)
                 {
-                    ImageChange();
                     DataManager.Instance.data.ImageLight[tmp - 1] = false;
-                    DataManager.Instance.SaveGameData();
+                    DataManager.Instance.data.ZoneLight[tmp - 1] = false;
                 }
             }
 
@@ -82,7 +126,6 @@ public class OffButtonClik : MonoBehaviour
             }
         }
     }
-
     public void OffBtnTitleTransfer()
     {
         slice = this.gameObject.name;

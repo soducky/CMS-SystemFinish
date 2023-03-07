@@ -10,6 +10,7 @@ public class DeveloperModeEnter : MonoBehaviour // 관리자모드 클래스 - 네트워크 
     public InputField Devel_IP;
     public InputField Devel_Port;
     public InputField Devel_Name;
+    public InputField Devel_Time;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class DeveloperModeEnter : MonoBehaviour // 관리자모드 클래스 - 네트워크 
         Devel_IP.text = PlayerPrefs.GetString("Devel_IP");
         Devel_Port.text = PlayerPrefs.GetInt("Devel_Port").ToString();
         Devel_Name.text = PlayerPrefs.GetString("Devel_Name");
+        Devel_Time.text = PlayerPrefs.GetFloat("Devel_Time").ToString();
     }
 
     public void ReadySave() // 세이브 할때 준비과정 
@@ -28,10 +30,12 @@ public class DeveloperModeEnter : MonoBehaviour // 관리자모드 클래스 - 네트워크 
         PlayerPrefs.DeleteKey("Devel_IP"); // 기존 데이터 삭제 후 저장 
         PlayerPrefs.DeleteKey("Devel_Port");
         PlayerPrefs.DeleteKey("Devel_Name");
+        PlayerPrefs.DeleteKey("Devel_Time");
 
         PlayerPrefs.SetString("Devel_IP", Devel_IP.text); // 인풋필드의 값을 PlayerPrefs 키에 저장 
         PlayerPrefs.SetInt("Devel_Port", int.Parse(Devel_Port.text));
         PlayerPrefs.SetString("Devel_Name", Devel_Name.text);
+        PlayerPrefs.SetFloat("Devel_Time", float.Parse(Devel_Time.text));
     }
 
     public void DBSave()
@@ -39,6 +43,7 @@ public class DeveloperModeEnter : MonoBehaviour // 관리자모드 클래스 - 네트워크 
         DataManager.Instance.data.Devel_IP = PlayerPrefs.GetString("Devel_IP"); // 싱글톤 안에 GetString을 넣어줌
         DataManager.Instance.data.Devel_Port = PlayerPrefs.GetInt("Devel_Port").ToString();
         DataManager.Instance.data.Devel_Name = PlayerPrefs.GetString("Devel_Name");
+        DataManager.Instance.data.Devel_Time = PlayerPrefs.GetFloat("Devel_Time").ToString();
     }
 
     public void EnterDeveloperBtn() // 관리자 모드 들어가는 버튼 클릭

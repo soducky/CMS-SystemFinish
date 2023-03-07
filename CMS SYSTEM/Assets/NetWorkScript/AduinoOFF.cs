@@ -14,7 +14,7 @@ public class AduinoOFF : MonoBehaviour
     {
         if(data=="1")
         {
-            GameObject.FindWithTag("Server").GetComponent<Server>().AllOffBtn();
+            GameObject.FindWithTag("Server").GetComponent<Client>().AllOffBtn();
         }
     }
 
