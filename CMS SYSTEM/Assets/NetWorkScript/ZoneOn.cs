@@ -16,9 +16,18 @@ public class ZoneOn : MonoBehaviour
     public Image[] ZoneImgChange;
     public Sprite GreenLight;
 
+
     private void Update()
     {
         ZoneImgChangeMethod();
+
+        for(int i=0; i<DataManager.Instance.data.i; i++)
+        {
+            if(DataManager.Instance.data.IPAddress[i] == "0")
+            {
+                DataManager.Instance.data.ZoneLight[i] = true;
+            }
+        }
     }
 
     void ZoneImgChangeMethod()
@@ -110,7 +119,7 @@ public class ZoneOn : MonoBehaviour
     public void Zone1OnBtnClik()
     {
 
-        for (int i = 0; i <= 7; i++) 
+        for (int i = 0; i <= Zone1.Length - 1; i++) 
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -123,7 +132,7 @@ public class ZoneOn : MonoBehaviour
 
     public void LaterPCOnZone1()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone1.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -133,7 +142,7 @@ public class ZoneOn : MonoBehaviour
     }
     public void Zone2OnBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone2.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -146,7 +155,7 @@ public class ZoneOn : MonoBehaviour
 
     public void LaterPCOnZone2()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone2.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -157,7 +166,7 @@ public class ZoneOn : MonoBehaviour
 
     public void Zone3OnBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone3.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -170,7 +179,7 @@ public class ZoneOn : MonoBehaviour
 
     public void LaterPCOnZone3()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone3.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -181,7 +190,7 @@ public class ZoneOn : MonoBehaviour
 
     public void Zone4OnBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone4.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -194,7 +203,7 @@ public class ZoneOn : MonoBehaviour
 
     public void LaterPCOnZone4()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone4.Length-1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -205,7 +214,7 @@ public class ZoneOn : MonoBehaviour
 
     public void Zone5OnBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone5.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -218,7 +227,7 @@ public class ZoneOn : MonoBehaviour
 
     public void LaterPCOnZone5()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone5.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -229,7 +238,7 @@ public class ZoneOn : MonoBehaviour
 
     public void Zone6OnBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone6.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -242,7 +251,7 @@ public class ZoneOn : MonoBehaviour
 
     public void LaterPCOnZone6()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone6.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -253,7 +262,7 @@ public class ZoneOn : MonoBehaviour
 
     public void Zone7OnBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone7.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -266,7 +275,7 @@ public class ZoneOn : MonoBehaviour
 
     public void LaterPCOnZone7()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone7.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {

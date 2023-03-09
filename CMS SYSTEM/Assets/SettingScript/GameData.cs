@@ -51,6 +51,16 @@ public class Data // 씬 이동시 데이터 저장할 것들
     public string Devel_Name; // 개발자모드 서버의 이름 입력
     public string Devel_Time; // 개발자모드 시간 딜레이 입력
 
+    public string Open_Hour;
+    public string Open_Minute;
+    public string Open_Second = "01";
+    public int Open_DropDown;
+
+    public string Close_Hour;
+    public string Close_Minute;
+    public string Close_Second = "01";
+    public int Close_DropDown;
+
     public List<String> Name = new List<String>(); // 각각의 정보들 리스트로 담음
     public List<String> MacAddress = new List<String>();
     public List<String> IPAddress = new List<String>();

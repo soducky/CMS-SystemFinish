@@ -46,6 +46,11 @@ public class OffButtonClik : MonoBehaviour
             ImageChange();
         }
 
+        if (DataManager.Instance.data.IPAddress[tmp - 1] == "0")
+        {
+            DataManager.Instance.data.ImageLight[tmp - 1] = false;
+        }
+
         if (DataManager.Instance.data.modeSelect[tmp-1] == false) // PJ링크 모드 일때 
         {
             _port = int.Parse(DataManager.Instance.data.Port[tmp - 1]);

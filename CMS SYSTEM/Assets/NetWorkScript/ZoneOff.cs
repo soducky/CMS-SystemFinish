@@ -13,8 +13,6 @@ public class ZoneOff : MonoBehaviour
     public GameObject[] Zone6;
     public GameObject[] Zone7;
 
-    public List<bool> SignalList = new List<bool>();  // 존 상태이미지 교체에 담을 객체 리스트
-
     public Image[] ZoneImgReCh;
     public Sprite RedLight;
 
@@ -112,7 +110,7 @@ public class ZoneOff : MonoBehaviour
 
     public void Zone1OffBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone1.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -125,7 +123,7 @@ public class ZoneOff : MonoBehaviour
 
     public void LaterPJOffZone1()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone1.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -136,7 +134,7 @@ public class ZoneOff : MonoBehaviour
 
     public void Zone2OffBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone2.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -149,7 +147,7 @@ public class ZoneOff : MonoBehaviour
 
     public void LaterPJOffZone2()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone2.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -159,7 +157,7 @@ public class ZoneOff : MonoBehaviour
     }
     public void Zone3OffBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone3.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -172,7 +170,7 @@ public class ZoneOff : MonoBehaviour
 
     public void LaterPJOffZone3()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone3.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -183,7 +181,7 @@ public class ZoneOff : MonoBehaviour
 
     public void Zone4OffBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone4.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -196,7 +194,7 @@ public class ZoneOff : MonoBehaviour
 
     public void LaterPJOffZone4()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone4.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -207,7 +205,7 @@ public class ZoneOff : MonoBehaviour
 
     public void Zone5OffBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone5.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -220,7 +218,7 @@ public class ZoneOff : MonoBehaviour
 
     public void LaterPJOffZone5()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone5.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -231,7 +229,7 @@ public class ZoneOff : MonoBehaviour
 
     public void Zone6OffBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone6.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -244,7 +242,7 @@ public class ZoneOff : MonoBehaviour
 
     public void LaterPJOffZone6()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone6.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -255,7 +253,7 @@ public class ZoneOff : MonoBehaviour
 
     public void Zone7OffBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone7.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
@@ -268,7 +266,7 @@ public class ZoneOff : MonoBehaviour
 
     public void LaterPJOffZone7()
     {
-        for (int i = 0; i <= 7; i++)
+        for (int i = 0; i <= Zone7.Length - 1; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {

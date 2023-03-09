@@ -124,6 +124,10 @@
     <Compile Include="Assets\PJLinkScript\PjlinkClient.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\EncoderLibrary\EncoderLibrary.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\Servo\Servo.cs" />
+    <Compile Include="Assets\NetWorkScript\AllOFF.cs" />
+    <Compile Include="Assets\NetWorkScript\AllON.cs" />
+    <Compile Include="Assets\MainScript\MainTimer.cs" />
+    <Compile Include="Assets\NetWorkScript\Alarm.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Uduino\ReadMe.txt" />

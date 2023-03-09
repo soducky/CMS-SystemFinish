@@ -1554,5 +1554,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/SettingScene.unity
-  playerPath: "C:/Users/INDIGO-2020-11/Desktop/\uB9C8\uC2A4\uD130 PC\uBE4C\uB4DC/CMS
-    SYSTEM.exe"
+  playerPath: "C:/Users/INDIGO-2020-11/Desktop/\uD14C\uC2A4\uD2B8/CMS SYSTEM.exe"

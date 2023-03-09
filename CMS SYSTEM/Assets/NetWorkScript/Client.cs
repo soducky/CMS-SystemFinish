@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.Net.Sockets;
 using System.IO;
 using System;
+using PjlinkClient;
 
 public class Client : MonoBehaviour
 {
@@ -99,23 +100,6 @@ public class Client : MonoBehaviour
         Send(message);
     }
 
-    public void AllOffBtn()
-    {
-        for (int k = 0; k < DataManager.Instance.data.i; k++)
-        {
-            if (DataManager.Instance.data.IPAddress[k] != "0")
-            {
-                string mes = DataManager.Instance.data.IPAddress[k];
-
-                Send(mes);
-            }
-
-            else if (DataManager.Instance.data.IPAddress[k] == "0")
-            {
-                return;
-            }
-        }
-    }
     void OnApplicationQuit()
     {
         CloseSocket();

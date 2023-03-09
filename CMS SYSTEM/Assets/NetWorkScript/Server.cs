@@ -84,6 +84,8 @@ public class Server : MonoBehaviour
 
         for (int i = 0; i < disconnectList.Count - 1; i++)
         {
+           // Broadcast($"{disconnectList[i].clientName}"+"0", clients); // 강제종료까지 포함하게 하려면 기능추가
+
             clients.Remove(disconnectList[i]); // 연결 끊어진거 리스트에서 지우기
             disconnectList.RemoveAt(i);
         }
