@@ -7,17 +7,18 @@ public class Alarm : MonoBehaviour
 {
     private bool isAlarmSet = false;
     private DateTime _alarmTime = DateTime.Today;
+  
     void Start()
     {
         SetAlarm();
-        Debug.Log("FF");
     }
 
     void Update()
     {
         if(isAlarmSet && DateTime.Now > _alarmTime)
         {
-            Debug.Log("Open ALARM");
+            Debug.Log("¾Ë¶÷");
+            isAlarmSet = false; 
         }
     }
 
@@ -34,14 +35,15 @@ public class Alarm : MonoBehaviour
             hours = int.Parse(DataManager.Instance.data.Open_Hour) + 12;
         }
 
-        TimeSpan ts = TimeSpan.Parse($"{DataManager.Instance.data.Open_Hour}:{ DataManager.Instance.data.Open_Minute}:{ DataManager.Instance.data.Open_Second}");
+        TimeSpan ts = TimeSpan.Parse($"{hours}:{ DataManager.Instance.data.Open_Minute}:{ DataManager.Instance.data.Open_Second}");
         _alarmTime += ts;
          
         if(DateTime.Now> _alarmTime )
         {
             _alarmTime= _alarmTime.AddDays(1);
         }
-
+ 
         isAlarmSet= true;
+
     }
 }

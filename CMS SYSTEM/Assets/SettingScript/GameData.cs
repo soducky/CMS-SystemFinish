@@ -44,6 +44,8 @@ public class Data // 씬 이동시 데이터 저장할 것들
          true,true,true,true,true,true,true,true,true,true,
          true,true,true,true,true,true};
 
+    public bool[] Alarm_weekday = new bool[] { false, false, false, false, false, false, false };
+
     public bool ChangeSceneAuto = false; // 처음 실행시 서버 연결을 위해 Main 페이지로 자동 이동 
 
     public string Devel_Port; // 개발자모드 서버의 포트 입력
