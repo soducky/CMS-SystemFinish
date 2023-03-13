@@ -10,6 +10,7 @@ public class MainTimer : MonoBehaviour
     private bool isEnded;
     public GameObject timer;
 
+
     void Update()
     {
         if(isEnded) return;
@@ -17,7 +18,7 @@ public class MainTimer : MonoBehaviour
         Check_Timer();
     }
 
-    void Check_Timer()
+    public void Check_Timer()
     {
         if (0 < time_current)
         {
@@ -30,16 +31,18 @@ public class MainTimer : MonoBehaviour
         }
     }
 
-    private void End_Timer()
+    public void End_Timer()
     {
         time_current = 0;
         Timer_Text.text = $"{time_current:N0}";
         isEnded = true;
         timer.SetActive(false);
+
     }
 
     public void Reset_Timer()
     {
+
         timer.SetActive(true);
         time_current = float.Parse(DataManager.Instance.data.Devel_Time);
         Timer_Text.text = $"{time_current:N0}";

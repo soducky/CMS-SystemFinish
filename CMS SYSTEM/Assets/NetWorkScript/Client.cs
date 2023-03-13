@@ -6,12 +6,18 @@ using System.Net.Sockets;
 using System.IO;
 using System;
 using PjlinkClient;
+using System.Globalization;
+using System.Net;
 
 public class Client : MonoBehaviour
 {
     string clientName;
 
     bool socketReady;
+
+    int h;
+    string _hostName;
+    int _port;
 
     TcpClient socket;
     NetworkStream stream;
@@ -98,6 +104,110 @@ public class Client : MonoBehaviour
         string message = SendInput;     // 종료될때 종료신호 보내기
 
         Send(message);
+    }
+
+    public void AllOff()
+    {
+        for (h = 0; h < DataManager.Instance.data.i; h++)
+        {
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                string mes = DataManager.Instance.data.IPAddress[h];
+                Send(mes);
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("AllOffLaterPJ", float.Parse(DataManager.Instance.data.Devel_Time));
+            }
+        }
+    }
+
+    public void AllOffLaterPJ()
+    {
+        for (h = 0; h < DataManager.Instance.data.i; h++)
+        {
+            _hostName = DataManager.Instance.data.IPAddress[h];
+            _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+            if (_port == 4352)
+            {
+                PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                PJ.PowerOff();
+
+                if (PJ.value == 2)
+                {
+                    DataManager.Instance.data.ImageLight[h] = false;
+                    DataManager.Instance.data.ZoneLight[h] = false;
+                }
+            }
+        }
+    }
+
+    public void AllOn()
+    {
+        for (h = 0; h < DataManager.Instance.data.i; h++)
+        {
+            if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                _hostName = DataManager.Instance.data.IPAddress[h];
+                _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+                if (_port == 4352)
+                {
+                    PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                    PJ.PowerOn();
+
+                    if (PJ.value == 1)
+                    {
+                        DataManager.Instance.data.ImageLight[h] = true;
+                        DataManager.Instance.data.ZoneLight[h] = true;
+                    }
+                }
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("AllOnLaterPC", float.Parse(DataManager.Instance.data.Devel_Time));
+            }
+        }
+    }
+
+    public void AllOnLaterPC()
+    {
+        for (h = 0; h < DataManager.Instance.data.i; h++)
+        {
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                UdpClient udpClient = new UdpClient();
+                udpClient.EnableBroadcast = true;
+
+                var dgram = new byte[1024];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    dgram[i] = 255;
+                }
+
+                byte[] address_bytes = new byte[6];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    address_bytes[i] = byte.Parse(DataManager.Instance.data.MacAddress[h].Substring(3 * i, 2), NumberStyles.HexNumber);
+                }
+
+                var macaddress_block = dgram.AsSpan(6, 16 * 6);
+
+                for (int i = 0; i < 16; i++)
+                {
+                    address_bytes.CopyTo(macaddress_block.Slice(6 * i));
+                }
+
+                udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[h])));
+
+                udpClient.Close();
+            }
+        }
     }
 
     void OnApplicationQuit()

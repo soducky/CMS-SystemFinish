@@ -15,10 +15,6 @@ public class AllON : MonoBehaviour
     public Image StateLightImg;
     public Sprite GreenLight;
 
-    string _hostName;
-    int _port;
-    int h;
-
     void Update()
     {
         if (DataManager.Instance.data.ZoneLight[0] == true &&
@@ -84,70 +80,6 @@ public class AllON : MonoBehaviour
 
     public void AllOnBtnClik()
     {
-        for(h=0; h<DataManager.Instance.data.i; h++)
-        {
-            if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
-            {
-                _hostName = DataManager.Instance.data.IPAddress[h];
-                _port = int.Parse(DataManager.Instance.data.Port[h]);
-
-                if (_port == 4352)
-                {
-                    PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
-                    PJ.PowerOn();
-
-                    if (PJ.value == 1)
-                    {
-                        DataManager.Instance.data.ImageLight[h] = true;
-                        DataManager.Instance.data.ZoneLight[h] = true;
-                    }
-                }
-            }
-
-            else if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
-            {
-                Invoke("MagicPacketAll", float.Parse(DataManager.Instance.data.Devel_Time));
-            }
-        }
-    }
-
-    public void MagicPacketAll()
-    {
-        for (h = 0; h < DataManager.Instance.data.i; h++)
-        {
-            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
-            {
-                UdpClient udpClient = new UdpClient();
-                udpClient.EnableBroadcast = true;
-
-                var dgram = new byte[1024];
-
-                for (int i = 0; i < 6; i++)
-                {
-                    dgram[i] = 255;
-                }
-
-                byte[] address_bytes = new byte[6];
-
-                for (int i = 0; i < 6; i++)
-                {
-                    address_bytes[i] = byte.Parse(DataManager.Instance.data.MacAddress[h].Substring(3 * i, 2), NumberStyles.HexNumber);
-                }
-
-                var macaddress_block = dgram.AsSpan(6, 16 * 6);
-
-                for (int i = 0; i < 16; i++)
-                {
-                    address_bytes.CopyTo(macaddress_block.Slice(6 * i));
-                }
-
-                udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[h])));
-
-                Debug.Log("m_port : " + DataManager.Instance.data.Port[h]);
-                Debug.Log("macaddres : " + DataManager.Instance.data.MacAddress[h]);
-
-                udpClient.Close();
-            }
-        }
+        GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().AllOn();
     }
 }

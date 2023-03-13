@@ -142,20 +142,20 @@ public class ZoneOn : MonoBehaviour
     }
     public void Zone2OnBtnClik()
     {
-        for (int i = 0; i <= Zone2.Length - 1; i++)
+        for (int i = 0; i <= 7; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
             {
                 Zone2[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
             }
         }
-
+        
         Invoke("LaterPCOnZone2", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPCOnZone2()
     {
-        for (int i = 0; i <= Zone2.Length - 1; i++)
+        for (int i = 0; i <= 7; i++)
         {
             if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
             {
