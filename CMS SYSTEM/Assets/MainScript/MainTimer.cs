@@ -10,6 +10,8 @@ public class MainTimer : MonoBehaviour
     private bool isEnded;
     public GameObject timer;
 
+    public GameObject DisabledMainBtn;
+    public GameObject DisabledBackBtn;
 
     void Update()
     {
@@ -36,14 +38,19 @@ public class MainTimer : MonoBehaviour
         time_current = 0;
         Timer_Text.text = $"{time_current:N0}";
         isEnded = true;
-        timer.SetActive(false);
 
+        timer.SetActive(false);
+        DisabledBackBtn.SetActive(true);
+        DisabledMainBtn.SetActive(true);
     }
 
     public void Reset_Timer()
     {
 
         timer.SetActive(true);
+        DisabledBackBtn.SetActive(false);
+        DisabledMainBtn.SetActive(false);
+
         time_current = float.Parse(DataManager.Instance.data.Devel_Time);
         Timer_Text.text = $"{time_current:N0}";
         isEnded= false;

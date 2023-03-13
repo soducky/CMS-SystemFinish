@@ -76,6 +76,7 @@
     <Compile Include="Assets\Uduino\Examples\Basic\BlinkLed\BlinkLed.cs" />
     <Compile Include="Assets\Uduino\Scripts\Extra\Interface\UduinoInterface_Serial.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\ServoOptimized\ServoOptimized.cs" />
+    <Compile Include="Assets\NetWorkScript\Alarm\Thursday_Alarm.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\LedIntensity\SendLedIntensity.cs" />
     <Compile Include="Assets\SettingScript\LoadUduino.cs" />
     <Compile Include="Assets\StartScript\ChangeScene.cs" />
@@ -88,21 +89,26 @@
     <Compile Include="Assets\MainScript\ZoneNameLoad.cs" />
     <Compile Include="Assets\NetWorkScript\AllOFF.cs" />
     <Compile Include="Assets\Uduino\Scripts\Extra\Interface\Resources\Bluetooth\UduinoInterface_Bluetooth.cs" />
+    <Compile Include="Assets\NetWorkScript\Alarm\Saturday_Alarm.cs" />
     <Compile Include="Assets\PJLinkScript\ProjectorConnectionException.cs" />
     <Compile Include="Assets\StartScript\LoadStart.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\FadeInOut\FadeInOut.cs" />
+    <Compile Include="Assets\NetWorkScript\Alarm\Friday_Alarm.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\Arduino Mega\MegaReadWrite.cs" />
     <Compile Include="Assets\SettingScript\ModeSelectToggle.cs" />
     <Compile Include="Assets\MainScript\ZoneNameTitle.cs" />
     <Compile Include="Assets\SettingScript\SelectToggles.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\MultipleArduino\MultipleArduino.cs" />
     <Compile Include="Assets\SettingScript\DataManager.cs" />
+    <Compile Include="Assets\NetWorkScript\Alarm\Wednesday_Alarm.cs" />
+    <Compile Include="Assets\NetWorkScript\Alarm\Tuesday_Alarm.cs" />
     <Compile Include="Assets\Uduino\Scripts\Boards\UduinoPin.cs" />
     <Compile Include="Assets\PJLinkScript\Enums.cs" />
     <Compile Include="Assets\Uduino\Scripts\Boards\DesktopSerial\UduinoConnection_DesktopSerial.cs" />
     <Compile Include="Assets\SettingScript\AllDataDeleteButton.cs" />
     <Compile Include="Assets\NetWorkScript\Alarm\Monday_Alarm.cs" />
     <Compile Include="Assets\MainScript\CMS_Name.cs" />
+    <Compile Include="Assets\NetWorkScript\Alarm\Sunday_Alarm.cs" />
     <Compile Include="Assets\SettingScript\DayToggle.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\SimpleUduino.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\ButtonTrigger\ButtonTrigger.cs" />
@@ -129,12 +135,7 @@
     <Compile Include="Assets\PJLinkScript\PjlinkClient.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\EncoderLibrary\EncoderLibrary.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\Servo\Servo.cs" />
-    <Compile Include="Assets\NetWorkScript\Alarm\Tuesday_Alarm.cs" />
-    <Compile Include="Assets\NetWorkScript\Alarm\Wednesday_Alarm.cs" />
-    <Compile Include="Assets\NetWorkScript\Alarm\Thursday_Alarm.cs" />
-    <Compile Include="Assets\NetWorkScript\Alarm\Friday_Alarm.cs" />
-    <Compile Include="Assets\NetWorkScript\Alarm\Saturday_Alarm.cs" />
-    <Compile Include="Assets\NetWorkScript\Alarm\Sunday_Alarm.cs" />
+    <Compile Include="Assets\MainScript\AlarmTitleText.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Uduino\ReadMe.txt" />

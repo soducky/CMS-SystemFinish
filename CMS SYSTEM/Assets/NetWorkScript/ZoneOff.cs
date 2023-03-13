@@ -1,3 +1,4 @@
+using PjlinkClient;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,16 +6,12 @@ using UnityEngine.UI;
 
 public class ZoneOff : MonoBehaviour
 {
-    public GameObject[] Zone1;
-    public GameObject[] Zone2;
-    public GameObject[] Zone3;
-    public GameObject[] Zone4;
-    public GameObject[] Zone5;
-    public GameObject[] Zone6;
-    public GameObject[] Zone7;
-
     public Image[] ZoneImgReCh;
     public Sprite RedLight;
+
+    int h;
+    string _hostName;
+    int _port;
 
     private void Update()
     {
@@ -110,167 +107,271 @@ public class ZoneOff : MonoBehaviour
 
     public void Zone1OffBtnClik()
     {
-        for (int i = 0; i <= Zone1.Length - 1; i++)
+        for (h = 0; h <= 7; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone1[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+                string mes = DataManager.Instance.data.IPAddress[h];
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPJOffZone1", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPJOffZone1", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPJOffZone1()
     {
-        for (int i = 0; i <= Zone1.Length - 1; i++)
+        for (h = 0; h <= 7; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            _hostName = DataManager.Instance.data.IPAddress[h];
+            _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+            if (_port == 4352)
             {
-                Zone1[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+
+                PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                PJ.PowerOff();
+
+                if (PJ.value == 2)
+                {
+                    DataManager.Instance.data.ImageLight[h] = false;
+                    DataManager.Instance.data.ZoneLight[h] = false;
+                }
             }
         }
     }
 
     public void Zone2OffBtnClik()
     {
-        for (int i = 0; i <= Zone2.Length - 1; i++)
+        for (h= 8; h <= 15; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone2[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+                string mes = DataManager.Instance.data.IPAddress[h];
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPJOffZone2", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPJOffZone2", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPJOffZone2()
     {
-        for (int i = 0; i <= Zone2.Length - 1; i++)
+        for (h=8; h <= 15; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            _hostName = DataManager.Instance.data.IPAddress[h];
+            _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+            if (_port == 4352)
             {
-                Zone2[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+                    PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                    PJ.PowerOff();
+
+                    if (PJ.value == 2)
+                    {
+                        DataManager.Instance.data.ImageLight[h] = false;
+                        DataManager.Instance.data.ZoneLight[h] = false;
+                    }
             }
         }
     }
     public void Zone3OffBtnClik()
     {
-        for (int i = 0; i <= Zone3.Length - 1; i++)
+        for (h = 16; h <= 23; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone3[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+                string mes = DataManager.Instance.data.IPAddress[h];
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPJOffZone3", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPJOffZone3", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPJOffZone3()
     {
-        for (int i = 0; i <= Zone3.Length - 1; i++)
+        for (h = 16; h <= 23; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            _hostName = DataManager.Instance.data.IPAddress[h];
+            _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+            if (_port == 4352)
             {
-                Zone3[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+
+                PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                PJ.PowerOff();
+
+                if (PJ.value == 2)
+                {
+                    DataManager.Instance.data.ImageLight[h] = false;
+                    DataManager.Instance.data.ZoneLight[h] = false;
+                }
             }
         }
     }
 
     public void Zone4OffBtnClik()
     {
-        for (int i = 0; i <= Zone4.Length - 1; i++)
+        for (h = 24; h <= 31; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone4[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+                string mes = DataManager.Instance.data.IPAddress[h];
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPJOffZone4", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPJOffZone4", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPJOffZone4()
     {
-        for (int i = 0; i <= Zone4.Length - 1; i++)
+        for (h = 24; h <= 31; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            _hostName = DataManager.Instance.data.IPAddress[h];
+            _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+            if (_port == 4352)
             {
-                Zone4[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+
+                PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                PJ.PowerOff();
+
+                if (PJ.value == 2)
+                {
+                    DataManager.Instance.data.ImageLight[h] = false;
+                    DataManager.Instance.data.ZoneLight[h] = false;
+                }
             }
         }
     }
 
     public void Zone5OffBtnClik()
     {
-        for (int i = 0; i <= Zone5.Length - 1; i++)
+        for (h = 32; h <= 39; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone5[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+                string mes = DataManager.Instance.data.IPAddress[h];
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPJOffZone5", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPJOffZone5", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPJOffZone5()
     {
-        for (int i = 0; i <= Zone5.Length - 1; i++)
+        for (h = 32; h <= 39; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            _hostName = DataManager.Instance.data.IPAddress[h];
+            _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+            if (_port == 4352)
             {
-                Zone5[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+
+                PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                PJ.PowerOff();
+
+                if (PJ.value == 2)
+                {
+                    DataManager.Instance.data.ImageLight[h] = false;
+                    DataManager.Instance.data.ZoneLight[h] = false;
+                }
             }
         }
     }
 
     public void Zone6OffBtnClik()
     {
-        for (int i = 0; i <= Zone6.Length - 1; i++)
+        for (h = 40; h <= 47; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone6[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+                string mes = DataManager.Instance.data.IPAddress[h];
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPJOffZone6", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPJOffZone6", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPJOffZone6()
     {
-        for (int i = 0; i <= Zone6.Length - 1; i++)
+        for (h = 40; h <= 47; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            _hostName = DataManager.Instance.data.IPAddress[h];
+            _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+            if (_port == 4352)
             {
-                Zone6[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+
+                PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                PJ.PowerOff();
+
+                if (PJ.value == 2)
+                {
+                    DataManager.Instance.data.ImageLight[h] = false;
+                    DataManager.Instance.data.ZoneLight[h] = false;
+                }
             }
         }
     }
 
     public void Zone7OffBtnClik()
     {
-        for (int i = 0; i <= Zone7.Length - 1; i++)
+        for (h = 48; h <= 55; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone7[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+                string mes = DataManager.Instance.data.IPAddress[h];
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPJOffZone7", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPJOffZone7", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPJOffZone7()
     {
-        for (int i = 0; i <= Zone7.Length - 1; i++)
+        for (h = 48; h <= 55; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            _hostName = DataManager.Instance.data.IPAddress[h];
+            _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+            if (_port == 4352)
             {
-                Zone7[i].transform.GetChild(2).GetComponent<OffButtonClik>().OffBtnCapsule();
+
+                PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                PJ.PowerOff();
+
+                if (PJ.value == 2)
+                {
+                    DataManager.Instance.data.ImageLight[h] = false;
+                    DataManager.Instance.data.ZoneLight[h] = false;
+                }
             }
         }
     }

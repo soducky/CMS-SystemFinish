@@ -2267,69 +2267,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99fe1fdc1e1f0c2498113d46a6a0e385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Zone1:
-  - {fileID: 1481477701}
-  - {fileID: 2115912671}
-  - {fileID: 450970390}
-  - {fileID: 1665721989}
-  - {fileID: 1220322775}
-  - {fileID: 232006305}
-  - {fileID: 1951940798}
-  - {fileID: 828274571}
-  Zone2:
-  - {fileID: 2072925771}
-  - {fileID: 1037735958}
-  - {fileID: 2085700155}
-  - {fileID: 1689653439}
-  - {fileID: 1994317326}
-  - {fileID: 270932489}
-  - {fileID: 838726064}
-  - {fileID: 306710521}
-  Zone3:
-  - {fileID: 1898547649}
-  - {fileID: 1530256439}
-  - {fileID: 1661991338}
-  - {fileID: 1320427430}
-  - {fileID: 792694639}
-  - {fileID: 1447574529}
-  - {fileID: 577771673}
-  - {fileID: 966264948}
-  Zone4:
-  - {fileID: 1135922768}
-  - {fileID: 1984019801}
-  - {fileID: 1064388053}
-  - {fileID: 2016117797}
-  - {fileID: 468145640}
-  - {fileID: 703309678}
-  - {fileID: 1024490843}
-  - {fileID: 371345664}
-  Zone5:
-  - {fileID: 1428025162}
-  - {fileID: 39527930}
-  - {fileID: 201142651}
-  - {fileID: 563583404}
-  - {fileID: 165342976}
-  - {fileID: 1230008712}
-  - {fileID: 1622034482}
-  - {fileID: 962266037}
-  Zone6:
-  - {fileID: 696183662}
-  - {fileID: 670453574}
-  - {fileID: 79360571}
-  - {fileID: 155118707}
-  - {fileID: 1511552841}
-  - {fileID: 393554269}
-  - {fileID: 230556515}
-  - {fileID: 2021769707}
-  Zone7:
-  - {fileID: 1907270948}
-  - {fileID: 538040713}
-  - {fileID: 1972900493}
-  - {fileID: 1810244926}
-  - {fileID: 1226623172}
-  - {fileID: 917914487}
-  - {fileID: 1931680366}
-  - {fileID: 2035175972}
   ZoneImgReCh:
   - {fileID: 2034715226}
   - {fileID: 1311802652}
@@ -10090,69 +10027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8d536876302bd240b42fd2fa491442d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Zone1:
-  - {fileID: 1481477701}
-  - {fileID: 2115912671}
-  - {fileID: 450970390}
-  - {fileID: 1665721989}
-  - {fileID: 1220322775}
-  - {fileID: 232006305}
-  - {fileID: 1951940798}
-  - {fileID: 828274571}
-  Zone2:
-  - {fileID: 2072925771}
-  - {fileID: 1037735958}
-  - {fileID: 2085700155}
-  - {fileID: 1689653439}
-  - {fileID: 1994317326}
-  - {fileID: 270932489}
-  - {fileID: 838726064}
-  - {fileID: 306710521}
-  Zone3:
-  - {fileID: 1898547649}
-  - {fileID: 1530256439}
-  - {fileID: 1661991338}
-  - {fileID: 1320427430}
-  - {fileID: 792694639}
-  - {fileID: 1447574529}
-  - {fileID: 577771673}
-  - {fileID: 966264948}
-  Zone4:
-  - {fileID: 1135922768}
-  - {fileID: 1984019801}
-  - {fileID: 1064388053}
-  - {fileID: 2016117797}
-  - {fileID: 468145640}
-  - {fileID: 703309678}
-  - {fileID: 1024490843}
-  - {fileID: 371345664}
-  Zone5:
-  - {fileID: 1428025162}
-  - {fileID: 39527930}
-  - {fileID: 201142651}
-  - {fileID: 563583404}
-  - {fileID: 165342976}
-  - {fileID: 1230008712}
-  - {fileID: 1622034482}
-  - {fileID: 962266037}
-  Zone6:
-  - {fileID: 696183662}
-  - {fileID: 670453574}
-  - {fileID: 79360571}
-  - {fileID: 155118707}
-  - {fileID: 1511552841}
-  - {fileID: 393554269}
-  - {fileID: 230556515}
-  - {fileID: 2021769707}
-  Zone7:
-  - {fileID: 1907270948}
-  - {fileID: 538040713}
-  - {fileID: 1972900493}
-  - {fileID: 1810244926}
-  - {fileID: 1226623172}
-  - {fileID: 917914487}
-  - {fileID: 1931680366}
-  - {fileID: 2035175972}
   ZoneImgChange:
   - {fileID: 2034715226}
   - {fileID: 1311802652}
@@ -12294,8 +12168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Timer_Text: {fileID: 546618658}
   timer: {fileID: 546618655}
-  DisabledMainButton: {fileID: 1315945049}
-  DisabledBackButton: {fileID: 1749631430}
+  DisabledMainBtn: {fileID: 1315945049}
+  DisabledBackBtn: {fileID: 1749631430}
 --- !u!114 &546618658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12839,8 +12713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Timer_Text: {fileID: 568959989}
   timer: {fileID: 568959986}
-  DisabledMainButton: {fileID: 1315945049}
-  DisabledBackButton: {fileID: 1749631430}
+  DisabledMainBtn: {fileID: 1315945049}
+  DisabledBackBtn: {fileID: 1749631430}
 --- !u!114 &568959989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22140,8 +22014,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Timer_Text: {fileID: 1012767338}
   timer: {fileID: 1012767335}
-  DisabledMainButton: {fileID: 1315945049}
-  DisabledBackButton: {fileID: 1749631430}
+  DisabledMainBtn: {fileID: 1315945049}
+  DisabledBackBtn: {fileID: 1749631430}
 --- !u!114 &1012767338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28386,8 +28260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Timer_Text: {fileID: 1276017871}
   timer: {fileID: 1276017868}
-  DisabledMainButton: {fileID: 1315945049}
-  DisabledBackButton: {fileID: 1749631430}
+  DisabledMainBtn: {fileID: 1315945049}
+  DisabledBackBtn: {fileID: 1749631430}
 --- !u!114 &1276017871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31817,8 +31691,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Timer_Text: {fileID: 1388474452}
   timer: {fileID: 1388474449}
-  DisabledMainButton: {fileID: 1315945049}
-  DisabledBackButton: {fileID: 1749631430}
+  DisabledMainBtn: {fileID: 1315945049}
+  DisabledBackBtn: {fileID: 1749631430}
 --- !u!114 &1388474452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41969,8 +41843,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Timer_Text: {fileID: 1828434710}
   timer: {fileID: 1828434707}
-  DisabledMainButton: {fileID: 1315945049}
-  DisabledBackButton: {fileID: 1749631430}
+  DisabledMainBtn: {fileID: 1315945049}
+  DisabledBackBtn: {fileID: 1749631430}
 --- !u!114 &1828434710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48953,8 +48827,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Timer_Text: {fileID: 2111585656}
   timer: {fileID: 2111585653}
-  DisabledMainButton: {fileID: 1315945049}
-  DisabledBackButton: {fileID: 1749631430}
+  DisabledMainBtn: {fileID: 1315945049}
+  DisabledBackBtn: {fileID: 1749631430}
 --- !u!114 &2111585656
 MonoBehaviour:
   m_ObjectHideFlags: 0

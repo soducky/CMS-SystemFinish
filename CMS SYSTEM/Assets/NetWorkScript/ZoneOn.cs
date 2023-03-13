@@ -1,20 +1,21 @@
+using PjlinkClient;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using System.Net.Sockets;
+using System.Net;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ZoneOn : MonoBehaviour
 {
-    public GameObject[] Zone1;
-    public GameObject[] Zone2;
-    public GameObject[] Zone3;
-    public GameObject[] Zone4;
-    public GameObject[] Zone5;
-    public GameObject[] Zone6;
-    public GameObject[] Zone7;
-
     public Image[] ZoneImgChange;
     public Sprite GreenLight;
+
+    int h;
+    string _hostName;
+    int _port;
 
 
     private void Update()
@@ -119,167 +120,461 @@ public class ZoneOn : MonoBehaviour
     public void Zone1OnBtnClik()
     {
 
-        for (int i = 0; i <= Zone1.Length - 1; i++) 
+        for (h = 0; h<= 7; h++) 
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone1[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                _hostName = DataManager.Instance.data.IPAddress[h];
+                _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+                if (_port == 4352)
+                {
+                    PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                    PJ.PowerOn();
+
+                    if (PJ.value == 1)
+                    {
+                        DataManager.Instance.data.ImageLight[h] = true;
+                        DataManager.Instance.data.ZoneLight[h] = true;
+                    }
+                }
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPCOnZone1", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPCOnZone1", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPCOnZone1()
     {
-        for (int i = 0; i <= Zone1.Length - 1; i++)
+        for (h = 0; h <= 7; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone1[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                UdpClient udpClient = new UdpClient();
+                udpClient.EnableBroadcast = true;
+
+                var dgram = new byte[1024];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    dgram[i] = 255;
+                }
+
+                byte[] address_bytes = new byte[6];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    address_bytes[i] = byte.Parse(DataManager.Instance.data.MacAddress[h].Substring(3 * i, 2), NumberStyles.HexNumber);
+                }
+
+                var macaddress_block = dgram.AsSpan(6, 16 * 6);
+
+                for (int i = 0; i < 16; i++)
+                {
+                    address_bytes.CopyTo(macaddress_block.Slice(6 * i));
+                }
+
+                udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[h])));
+
+                udpClient.Close();
             }
         }
     }
     public void Zone2OnBtnClik()
     {
-        for (int i = 0; i <= 7; i++)
+        for (h = 8; h <= 15; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone2[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                _hostName = DataManager.Instance.data.IPAddress[h];
+                _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+                if (_port == 4352)
+                {
+                    PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                    PJ.PowerOn();
+
+                    if (PJ.value == 1)
+                    {
+                        DataManager.Instance.data.ImageLight[h] = true;
+                        DataManager.Instance.data.ZoneLight[h] = true;
+                    }
+                }
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPCOnZone2", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-        
-        Invoke("LaterPCOnZone2", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPCOnZone2()
     {
-        for (int i = 0; i <= 7; i++)
+        for (h = 8; h <= 15; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone2[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                UdpClient udpClient = new UdpClient();
+                udpClient.EnableBroadcast = true;
+
+                var dgram = new byte[1024];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    dgram[i] = 255;
+                }
+
+                byte[] address_bytes = new byte[6];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    address_bytes[i] = byte.Parse(DataManager.Instance.data.MacAddress[h].Substring(3 * i, 2), NumberStyles.HexNumber);
+                }
+
+                var macaddress_block = dgram.AsSpan(6, 16 * 6);
+
+                for (int i = 0; i < 16; i++)
+                {
+                    address_bytes.CopyTo(macaddress_block.Slice(6 * i));
+                }
+
+                udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[h])));
+
+                udpClient.Close();
             }
         }
     }
 
     public void Zone3OnBtnClik()
     {
-        for (int i = 0; i <= Zone3.Length - 1; i++)
+        for (h = 16; h <= 23; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone3[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                _hostName = DataManager.Instance.data.IPAddress[h];
+                _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+                if (_port == 4352)
+                {
+                    PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                    PJ.PowerOn();
+
+                    if (PJ.value == 1)
+                    {
+                        DataManager.Instance.data.ImageLight[h] = true;
+                        DataManager.Instance.data.ZoneLight[h] = true;
+                    }
+                }
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPCOnZone3", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPCOnZone3", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPCOnZone3()
     {
-        for (int i = 0; i <= Zone3.Length - 1; i++)
+        for (h = 16; h <= 23; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone3[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                UdpClient udpClient = new UdpClient();
+                udpClient.EnableBroadcast = true;
+
+                var dgram = new byte[1024];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    dgram[i] = 255;
+                }
+
+                byte[] address_bytes = new byte[6];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    address_bytes[i] = byte.Parse(DataManager.Instance.data.MacAddress[h].Substring(3 * i, 2), NumberStyles.HexNumber);
+                }
+
+                var macaddress_block = dgram.AsSpan(6, 16 * 6);
+
+                for (int i = 0; i < 16; i++)
+                {
+                    address_bytes.CopyTo(macaddress_block.Slice(6 * i));
+                }
+
+                udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[h])));
+
+                udpClient.Close();
             }
         }
     }
 
     public void Zone4OnBtnClik()
     {
-        for (int i = 0; i <= Zone4.Length - 1; i++)
+        for (h = 24; h <= 31; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone4[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                _hostName = DataManager.Instance.data.IPAddress[h];
+                _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+                if (_port == 4352)
+                {
+                    PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                    PJ.PowerOn();
+
+                    if (PJ.value == 1)
+                    {
+                        DataManager.Instance.data.ImageLight[h] = true;
+                        DataManager.Instance.data.ZoneLight[h] = true;
+                    }
+                }
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPCOnZone4", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPCOnZone4", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPCOnZone4()
     {
-        for (int i = 0; i <= Zone4.Length-1; i++)
+        for (h = 24; h <= 31; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone4[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                UdpClient udpClient = new UdpClient();
+                udpClient.EnableBroadcast = true;
+
+                var dgram = new byte[1024];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    dgram[i] = 255;
+                }
+
+                byte[] address_bytes = new byte[6];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    address_bytes[i] = byte.Parse(DataManager.Instance.data.MacAddress[h].Substring(3 * i, 2), NumberStyles.HexNumber);
+                }
+
+                var macaddress_block = dgram.AsSpan(6, 16 * 6);
+
+                for (int i = 0; i < 16; i++)
+                {
+                    address_bytes.CopyTo(macaddress_block.Slice(6 * i));
+                }
+
+                udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[h])));
+
+                udpClient.Close();
             }
         }
     }
 
     public void Zone5OnBtnClik()
     {
-        for (int i = 0; i <= Zone5.Length - 1; i++)
+        for (h = 32; h <= 39; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone5[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                _hostName = DataManager.Instance.data.IPAddress[h];
+                _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+                if (_port == 4352)
+                {
+                    PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                    PJ.PowerOn();
+
+                    if (PJ.value == 1)
+                    {
+                        DataManager.Instance.data.ImageLight[h] = true;
+                        DataManager.Instance.data.ZoneLight[h] = true;
+                    }
+                }
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPCOnZone5", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPCOnZone5", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPCOnZone5()
     {
-        for (int i = 0; i <= Zone5.Length - 1; i++)
+        for (h = 32; h <= 39; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone5[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                UdpClient udpClient = new UdpClient();
+                udpClient.EnableBroadcast = true;
+
+                var dgram = new byte[1024];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    dgram[i] = 255;
+                }
+
+                byte[] address_bytes = new byte[6];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    address_bytes[i] = byte.Parse(DataManager.Instance.data.MacAddress[h].Substring(3 * i, 2), NumberStyles.HexNumber);
+                }
+
+                var macaddress_block = dgram.AsSpan(6, 16 * 6);
+
+                for (int i = 0; i < 16; i++)
+                {
+                    address_bytes.CopyTo(macaddress_block.Slice(6 * i));
+                }
+
+                udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[h])));
+
+                udpClient.Close();
             }
         }
     }
 
     public void Zone6OnBtnClik()
     {
-        for (int i = 0; i <= Zone6.Length - 1; i++)
+        for (h = 40; h <= 47; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone6[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                _hostName = DataManager.Instance.data.IPAddress[h];
+                _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+                if (_port == 4352)
+                {
+                    PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                    PJ.PowerOn();
+
+                    if (PJ.value == 1)
+                    {
+                        DataManager.Instance.data.ImageLight[h] = true;
+                        DataManager.Instance.data.ZoneLight[h] = true;
+                    }
+                }
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPCOnZone6", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPCOnZone6", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPCOnZone6()
     {
-        for (int i = 0; i <= Zone6.Length - 1; i++)
+        for (h = 40; h <= 47; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone6[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                UdpClient udpClient = new UdpClient();
+                udpClient.EnableBroadcast = true;
+
+                var dgram = new byte[1024];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    dgram[i] = 255;
+                }
+
+                byte[] address_bytes = new byte[6];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    address_bytes[i] = byte.Parse(DataManager.Instance.data.MacAddress[h].Substring(3 * i, 2), NumberStyles.HexNumber);
+                }
+
+                var macaddress_block = dgram.AsSpan(6, 16 * 6);
+
+                for (int i = 0; i < 16; i++)
+                {
+                    address_bytes.CopyTo(macaddress_block.Slice(6 * i));
+                }
+
+                udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[h])));
+
+                udpClient.Close();
             }
         }
     }
 
     public void Zone7OnBtnClik()
     {
-        for (int i = 0; i <= Zone7.Length - 1; i++)
+        for (h = 48; h <= 55; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == false && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone7[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                _hostName = DataManager.Instance.data.IPAddress[h];
+                _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+                if (_port == 4352)
+                {
+                    PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                    PJ.PowerOn();
+
+                    if (PJ.value == 1)
+                    {
+                        DataManager.Instance.data.ImageLight[h] = true;
+                        DataManager.Instance.data.ZoneLight[h] = true;
+                    }
+                }
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("LaterPCOnZone7", float.Parse(DataManager.Instance.data.Devel_Time));
             }
         }
-
-        Invoke("LaterPCOnZone7", float.Parse(DataManager.Instance.data.Devel_Time));
     }
 
     public void LaterPCOnZone7()
     {
-        for (int i = 0; i <= Zone7.Length - 1; i++)
+        for (h = 48; h <= 55; h++)
         {
-            if (DataManager.Instance.data.modeSelect[i] == true && DataManager.Instance.data.IPAddress[i] != "0")
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Zone7[i].transform.GetChild(1).GetComponent<OnButtonClik>().OnBtnCapsule();
+                UdpClient udpClient = new UdpClient();
+                udpClient.EnableBroadcast = true;
+
+                var dgram = new byte[1024];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    dgram[i] = 255;
+                }
+
+                byte[] address_bytes = new byte[6];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    address_bytes[i] = byte.Parse(DataManager.Instance.data.MacAddress[h].Substring(3 * i, 2), NumberStyles.HexNumber);
+                }
+
+                var macaddress_block = dgram.AsSpan(6, 16 * 6);
+
+                for (int i = 0; i < 16; i++)
+                {
+                    address_bytes.CopyTo(macaddress_block.Slice(6 * i));
+                }
+
+                udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[h])));
+
+                udpClient.Close();
             }
         }
     }
