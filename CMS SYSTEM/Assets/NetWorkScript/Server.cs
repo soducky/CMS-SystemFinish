@@ -48,7 +48,7 @@ public class Server : MonoBehaviour
 
             StartListening();
             serverStarted = true;
-            Debug.Log("서버시작 포트번호 : " + port);
+
         }
         catch (Exception e)
         {

@@ -32,7 +32,7 @@ public class AlarmTitleText : MonoBehaviour
             closeDropdown = "PM";
         }
 
-        OpenTitle.text = "∞≥¿Â : " + DataManager.Instance.data.Open_Hour + " : " + DataManager.Instance.data.Open_Minute + " " + openDropdown;
-        CloseTitle.text = "∆Û¿Â : " + DataManager.Instance.data.Close_Hour + " : " + DataManager.Instance.data.Close_Minute + " " + closeDropdown;
+        OpenTitle.text = "∞≥¿Â  " + DataManager.Instance.data.Open_Hour + " : " + DataManager.Instance.data.Open_Minute + " " + openDropdown;
+        CloseTitle.text = "∆Û¿Â  " + DataManager.Instance.data.Close_Hour + " : " + DataManager.Instance.data.Close_Minute + " " + closeDropdown;
     }
 }

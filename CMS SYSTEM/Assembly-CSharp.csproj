@@ -59,6 +59,7 @@
     <Compile Include="Assets\Uduino\Scripts\UduinoManager.cs" />
     <Compile Include="Assets\NetWorkScript\AduinoOFF.cs" />
     <Compile Include="Assets\Uduino\Scripts\Extra\UduinoDebugCanvas.cs" />
+    <Compile Include="Assets\NetWorkScript\AlarmTimer.cs" />
     <Compile Include="Assets\MainScript\Carousel.cs" />
     <Compile Include="Assets\SettingScript\GameData.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\ReadWrite\ReadWrite.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Assets\Uduino\Scripts\Boards\ArduinoBoardType.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\Bundle\Bundle.cs" />
     <Compile Include="Assets\Uduino\Scripts\Extra\Interface\UduinoInterface.cs" />
+    <Compile Include="Assets\MainScript\AlarmTitleText.cs" />
     <Compile Include="Assets\MainScript\ZoneNameLoad.cs" />
     <Compile Include="Assets\NetWorkScript\AllOFF.cs" />
     <Compile Include="Assets\Uduino\Scripts\Extra\Interface\Resources\Bluetooth\UduinoInterface_Bluetooth.cs" />
@@ -95,6 +97,7 @@
     <Compile Include="Assets\Uduino\Examples\Basic\FadeInOut\FadeInOut.cs" />
     <Compile Include="Assets\NetWorkScript\Alarm\Friday_Alarm.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\Arduino Mega\MegaReadWrite.cs" />
+    <Compile Include="Assets\MainScript\ZoneHiden.cs" />
     <Compile Include="Assets\SettingScript\ModeSelectToggle.cs" />
     <Compile Include="Assets\MainScript\ZoneNameTitle.cs" />
     <Compile Include="Assets\SettingScript\SelectToggles.cs" />
@@ -135,7 +138,6 @@
     <Compile Include="Assets\PJLinkScript\PjlinkClient.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\EncoderLibrary\EncoderLibrary.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\Servo\Servo.cs" />
-    <Compile Include="Assets\MainScript\AlarmTitleText.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Uduino\ReadMe.txt" />

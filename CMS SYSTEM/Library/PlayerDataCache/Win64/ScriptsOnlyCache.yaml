@@ -3,27 +3,41 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AddButton
     - AduinoOFF
+    - AlarmTimer
+    - AlarmTitleText
     - AllDataDeleteButton
+    - AllOFF
+    - AllON
     - CMS_Name
     - Carousel
     - ChangeScene
     - Client
+    - DayToggle
     - DeleteButton
     - DeleteComplete
     - DeveloperModeEnter
+    - Friday_Alarm
     - InputData
     - LoadObject
     - LoadStart
     - LoadUduino
+    - MainTimer
     - ModeSelectToggle
+    - Monday_Alarm
     - OffButtonClik
     - OnButtonClik
     - RemoveList
+    - Saturday_Alarm
     - SelectToggles
     - Server
+    - Sunday_Alarm
+    - Thursday_Alarm
+    - Tuesday_Alarm
     - Uduino.UduinoInterface_Bluetooth
     - Uduino.UduinoInterface_Serial
     - Uduino.UduinoManager
+    - Wednesday_Alarm
+    - ZoneHiden
     - ZoneNameLoad
     - ZoneNameTitle
     - ZoneOff
@@ -40,6 +54,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.HorizontalLayoutGroup
@@ -70,6 +85,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
+    - UnityEngine.UI.Dropdown/DropdownEvent
+    - UnityEngine.UI.Dropdown/OptionData
+    - UnityEngine.UI.Dropdown/OptionDataList
     - UnityEngine.UI.FontData
     - UnityEngine.UI.InputField/EndEditEvent
     - UnityEngine.UI.InputField/OnChangeEvent
@@ -83,8 +101,20 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: AllON
+    methodName: AllOnBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
+  - assembly: Assembly-CSharp
     fullTypeName: ChangeScene
     methodName: BackButton
+  - assembly: Assembly-CSharp
+    fullTypeName: AllOFF
+    methodName: AllOFFBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
   - assembly: Assembly-CSharp
     fullTypeName: Carousel
     methodName: ContentsPosition
@@ -92,8 +122,14 @@ ScriptsOnlyBuild:
     fullTypeName: ZoneOff
     methodName: Zone1OffBtnClik
   - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
+  - assembly: Assembly-CSharp
     fullTypeName: ZoneOff
     methodName: Zone7OffBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
   - assembly: Assembly-CSharp
     fullTypeName: Carousel
     methodName: ContentsPosition
@@ -107,23 +143,41 @@ ScriptsOnlyBuild:
     fullTypeName: ZoneOn
     methodName: Zone2OnBtnClik
   - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
+  - assembly: Assembly-CSharp
     fullTypeName: Carousel
     methodName: ContentsPosition
   - assembly: Assembly-CSharp
     fullTypeName: ZoneOn
     methodName: Zone7OnBtnClik
   - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
+  - assembly: Assembly-CSharp
     fullTypeName: ZoneOn
     methodName: Zone1OnBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
   - assembly: Assembly-CSharp
     fullTypeName: ZoneOn
     methodName: Zone5OnBtnClik
   - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
+  - assembly: Assembly-CSharp
     fullTypeName: ZoneOff
     methodName: Zone2OffBtnClik
   - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
+  - assembly: Assembly-CSharp
     fullTypeName: ZoneOn
     methodName: Zone3OnBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
   - assembly: Assembly-CSharp
     fullTypeName: ChangeScene
     methodName: SettingBtnClik
@@ -131,14 +185,26 @@ ScriptsOnlyBuild:
     fullTypeName: ZoneOn
     methodName: Zone4OnBtnClik
   - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
+  - assembly: Assembly-CSharp
     fullTypeName: ZoneOff
     methodName: Zone4OffBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
   - assembly: Assembly-CSharp
     fullTypeName: ZoneOff
     methodName: Zone6OffBtnClik
   - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
+  - assembly: Assembly-CSharp
     fullTypeName: ZoneOff
     methodName: Zone5OffBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
   - assembly: Assembly-CSharp
     fullTypeName: Carousel
     methodName: ContentsPosition
@@ -152,8 +218,14 @@ ScriptsOnlyBuild:
     fullTypeName: ZoneOff
     methodName: Zone3OffBtnClik
   - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
+  - assembly: Assembly-CSharp
     fullTypeName: ZoneOn
     methodName: Zone6OnBtnClik
+  - assembly: Assembly-CSharp
+    fullTypeName: MainTimer
+    methodName: Reset_Timer
   - assembly: Assembly-CSharp
     fullTypeName: DeveloperModeEnter
     methodName: EnterDeveloperBtn
@@ -213,55 +285,75 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 1766}
+      Script: {instanceID: 1734}
     - Class: 114
-      Script: {instanceID: 2014}
+      Script: {instanceID: 1768}
     - Class: 114
-      Script: {instanceID: 2106}
+      Script: {instanceID: 2016}
     - Class: 114
-      Script: {instanceID: 2340}
+      Script: {instanceID: 2108}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2342}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 2658}
     - Class: 114
-      Script: {instanceID: 3192}
+      Script: {instanceID: 2888}
     - Class: 114
-      Script: {instanceID: 3378}
+      Script: {instanceID: 3194}
     - Class: 114
-      Script: {instanceID: 3552}
+      Script: {instanceID: 3380}
     - Class: 114
-      Script: {instanceID: 3722}
+      Script: {instanceID: 3474}
     - Class: 114
-      Script: {instanceID: 4028}
+      Script: {instanceID: 3556}
     - Class: 114
-      Script: {instanceID: 4300}
+      Script: {instanceID: 3726}
     - Class: 114
-      Script: {instanceID: 5260}
+      Script: {instanceID: 4032}
     - Class: 114
-      Script: {instanceID: 5468}
+      Script: {instanceID: 4306}
     - Class: 114
-      Script: {instanceID: 5620}
+      Script: {instanceID: 4784}
     - Class: 114
-      Script: {instanceID: 5954}
+      Script: {instanceID: 4934}
     - Class: 114
-      Script: {instanceID: 6222}
+      Script: {instanceID: 5272}
     - Class: 114
-      Script: {instanceID: 6470}
+      Script: {instanceID: 5306}
     - Class: 114
-      Script: {instanceID: 6482}
+      Script: {instanceID: 5482}
     - Class: 114
-      Script: {instanceID: 6832}
+      Script: {instanceID: 5634}
     - Class: 114
-      Script: {instanceID: 7558}
+      Script: {instanceID: 5734}
     - Class: 114
-      Script: {instanceID: 7606}
+      Script: {instanceID: 5936}
     - Class: 114
-      Script: {instanceID: 7614}
+      Script: {instanceID: 5972}
     - Class: 114
-      Script: {instanceID: 7750}
+      Script: {instanceID: 6152}
     - Class: 114
-      Script: {instanceID: 7978}
+      Script: {instanceID: 6242}
+    - Class: 114
+      Script: {instanceID: 6314}
+    - Class: 114
+      Script: {instanceID: 6492}
+    - Class: 114
+      Script: {instanceID: 6504}
+    - Class: 114
+      Script: {instanceID: 6856}
+    - Class: 114
+      Script: {instanceID: 7422}
+    - Class: 114
+      Script: {instanceID: 7586}
+    - Class: 114
+      Script: {instanceID: 7634}
+    - Class: 114
+      Script: {instanceID: 7642}
+    - Class: 114
+      Script: {instanceID: 7778}
+    - Class: 114
+      Script: {instanceID: 8006}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -312,51 +404,71 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 2340}
+      Script: {instanceID: 1734}
     - Class: 114
-      Script: {instanceID: 2360}
+      Script: {instanceID: 2342}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2362}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 2658}
     - Class: 114
-      Script: {instanceID: 2942}
+      Script: {instanceID: 2888}
     - Class: 114
-      Script: {instanceID: 3060}
+      Script: {instanceID: 2944}
     - Class: 114
-      Script: {instanceID: 3192}
+      Script: {instanceID: 3062}
     - Class: 114
-      Script: {instanceID: 3378}
+      Script: {instanceID: 3194}
     - Class: 114
-      Script: {instanceID: 3514}
+      Script: {instanceID: 3380}
     - Class: 114
-      Script: {instanceID: 3552}
+      Script: {instanceID: 3474}
     - Class: 114
-      Script: {instanceID: 3558}
+      Script: {instanceID: 3518}
     - Class: 114
-      Script: {instanceID: 4028}
+      Script: {instanceID: 3556}
     - Class: 114
-      Script: {instanceID: 5340}
+      Script: {instanceID: 3562}
     - Class: 114
-      Script: {instanceID: 5594}
+      Script: {instanceID: 4032}
     - Class: 114
-      Script: {instanceID: 5620}
+      Script: {instanceID: 4784}
     - Class: 114
-      Script: {instanceID: 5954}
+      Script: {instanceID: 4934}
     - Class: 114
-      Script: {instanceID: 6072}
+      Script: {instanceID: 5354}
     - Class: 114
-      Script: {instanceID: 6470}
+      Script: {instanceID: 5608}
     - Class: 114
-      Script: {instanceID: 6482}
+      Script: {instanceID: 5634}
     - Class: 114
-      Script: {instanceID: 6922}
+      Script: {instanceID: 5734}
     - Class: 114
-      Script: {instanceID: 7606}
+      Script: {instanceID: 5936}
     - Class: 114
-      Script: {instanceID: 8110}
+      Script: {instanceID: 5972}
     - Class: 114
-      Script: {instanceID: 8276}
+      Script: {instanceID: 6090}
+    - Class: 114
+      Script: {instanceID: 6152}
+    - Class: 114
+      Script: {instanceID: 6314}
+    - Class: 114
+      Script: {instanceID: 6492}
+    - Class: 114
+      Script: {instanceID: 6504}
+    - Class: 114
+      Script: {instanceID: 6648}
+    - Class: 114
+      Script: {instanceID: 6946}
+    - Class: 114
+      Script: {instanceID: 7334}
+    - Class: 114
+      Script: {instanceID: 7634}
+    - Class: 114
+      Script: {instanceID: 8138}
+    - Class: 114
+      Script: {instanceID: 8304}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -411,41 +523,65 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 1776}
+      Script: {instanceID: 1734}
     - Class: 114
-      Script: {instanceID: 2340}
+      Script: {instanceID: 1778}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2342}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 2658}
     - Class: 114
-      Script: {instanceID: 3192}
+      Script: {instanceID: 2888}
     - Class: 114
-      Script: {instanceID: 3378}
+      Script: {instanceID: 3194}
     - Class: 114
       Script: {instanceID: 3380}
     - Class: 114
-      Script: {instanceID: 3552}
+      Script: {instanceID: 3382}
     - Class: 114
-      Script: {instanceID: 4028}
+      Script: {instanceID: 3474}
     - Class: 114
-      Script: {instanceID: 4538}
+      Script: {instanceID: 3556}
     - Class: 114
-      Script: {instanceID: 4830}
+      Script: {instanceID: 4032}
     - Class: 114
-      Script: {instanceID: 4968}
+      Script: {instanceID: 4160}
     - Class: 114
-      Script: {instanceID: 5620}
+      Script: {instanceID: 4328}
     - Class: 114
-      Script: {instanceID: 5954}
+      Script: {instanceID: 4546}
     - Class: 114
-      Script: {instanceID: 6470}
+      Script: {instanceID: 4784}
     - Class: 114
-      Script: {instanceID: 6482}
+      Script: {instanceID: 4840}
     - Class: 114
-      Script: {instanceID: 6832}
+      Script: {instanceID: 4934}
     - Class: 114
-      Script: {instanceID: 7606}
+      Script: {instanceID: 4980}
+    - Class: 114
+      Script: {instanceID: 5634}
+    - Class: 114
+      Script: {instanceID: 5734}
+    - Class: 114
+      Script: {instanceID: 5936}
+    - Class: 114
+      Script: {instanceID: 5972}
+    - Class: 114
+      Script: {instanceID: 6152}
+    - Class: 114
+      Script: {instanceID: 6314}
+    - Class: 114
+      Script: {instanceID: 6492}
+    - Class: 114
+      Script: {instanceID: 6504}
+    - Class: 114
+      Script: {instanceID: 6856}
+    - Class: 114
+      Script: {instanceID: 7160}
+    - Class: 114
+      Script: {instanceID: 7422}
+    - Class: 114
+      Script: {instanceID: 7634}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -535,6 +671,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 8621eb09d280586a9d3eeeb0c2d8ed26
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AlarmTimer
   - hash:
       serializedVersion: 2
       Hash: 190f81edf77d30acce8650affb0b64c1
@@ -837,6 +979,12 @@ ScriptsOnlyBuild:
     className: UnityOnSelectMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 510730a1cae833a5469089a9bb435332
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Thursday_Alarm
+  - hash:
+      serializedVersion: 2
       Hash: 05d22f3d2213f01fa2228caed23e8a04
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -897,7 +1045,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 32c6e14dac1c21f81991b0848058625a
+      Hash: 80481383983583a379a9c3fe9ceba0f8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ZoneOn
@@ -937,6 +1085,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Uduino
     className: UduinoInterface
+  - hash:
+      serializedVersion: 2
+      Hash: 7c7f775cb590774206fc18c395423717
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AlarmTitleText
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -999,6 +1153,12 @@ ScriptsOnlyBuild:
     className: ZoneNameLoad
   - hash:
       serializedVersion: 2
+      Hash: af4bae089139258243d5639a09a4414c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AllOFF
+  - hash:
+      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1035,6 +1195,12 @@ ScriptsOnlyBuild:
     className: UnityOnPointerClickMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 510730a1cae833a5469089a9bb435332
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Saturday_Alarm
+  - hash:
+      serializedVersion: 2
       Hash: 5c20b8170499c1b20cf14a725a4d4019
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1045,6 +1211,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FadeInOut
+  - hash:
+      serializedVersion: 2
+      Hash: 510730a1cae833a5469089a9bb435332
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Friday_Alarm
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1113,6 +1285,12 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 0b64b7ec7695489ab6a644c878196067
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ZoneHiden
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1179,16 +1357,28 @@ ScriptsOnlyBuild:
     className: MultipleArduino
   - hash:
       serializedVersion: 2
-      Hash: af0338cf591b1f97a3d517fc8cd99aa4
+      Hash: 8b71691d3930cbc1fb5e7239da8a9b37
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DataManager
+  - hash:
+      serializedVersion: 2
+      Hash: 510730a1cae833a5469089a9bb435332
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Wednesday_Alarm
   - hash:
       serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.State.dll
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 510730a1cae833a5469089a9bb435332
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Tuesday_Alarm
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -1221,10 +1411,22 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 510730a1cae833a5469089a9bb435332
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Monday_Alarm
+  - hash:
+      serializedVersion: 2
       Hash: 9f82c5145849384da0f5aea9dee86956
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CMS_Name
+  - hash:
+      serializedVersion: 2
+      Hash: 510730a1cae833a5469089a9bb435332
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Sunday_Alarm
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1261,6 +1463,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DayToggle
   - hash:
       serializedVersion: 2
       Hash: 3679c63a515ca0da9e513327e78ef194
@@ -1347,6 +1555,12 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
+      Hash: d77f9de2750fc0a365dbe896caa3039a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AllON
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1401,6 +1615,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 8621eb09d280586a9d3eeeb0c2d8ed26
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainTimer
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1431,7 +1651,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: dec9675055b9b9ecbf8af168c882fa65
+      Hash: 6fe2f51017f0633a771ec8cab6cdd98e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ZoneOff
@@ -1491,7 +1711,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: c2f7673581a93ce619037718bc57910e
+      Hash: 7f0cc562ee77cefde1c55d5665cf0240
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DeveloperModeEnter
@@ -1554,4 +1774,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/SettingScene.unity
-  playerPath: "C:/Users/INDIGO-2020-11/Desktop/\uD14C\uC2A4\uD2B8/CMS SYSTEM.exe"
+  playerPath: "C:/Users/INDIGO-2020-11/Desktop/CMS \uCD5C\uC885 \uBE4C\uB4DC/CMS
+    SYSTEM.exe"

@@ -23,6 +23,7 @@ public class Saturday_Alarm : MonoBehaviour
     private IEnumerator coroutine; // 코루틴
     private bool isCoroutine = false; // 60분짜리 코루틴 update문에 사용 
 
+    public GameObject AlarmMent;
 
     void Start()
     {
@@ -34,12 +35,18 @@ public class Saturday_Alarm : MonoBehaviour
     {
         if (DataManager.Instance.data.Alarm_weekday[6] == true && OpenAlarmSet && DateTime.Now > _alarmTime)
         {
+            AlarmMent.SetActive(true);
+            GameObject.FindGameObjectWithTag("AlarmTimer").GetComponent<AlarmTimer>().Reset_Timer();
+
             GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().AllOn();
             OpenAlarmSet = false;
         }
 
         if (DataManager.Instance.data.Alarm_weekday[6] == true && CloseAlarmSet && DateTime.Now > Close_alarmTime)
         {
+            AlarmMent.SetActive(true);
+            GameObject.FindGameObjectWithTag("AlarmTimer").GetComponent<AlarmTimer>().Reset_Timer();
+
             GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().AllOff();
             CloseAlarmSet = false;
         }
@@ -86,7 +93,7 @@ public class Saturday_Alarm : MonoBehaviour
             if (goalDay > toDay)
             {
                 _alarmTime = _alarmTime.AddDays(goalDay - toDay);
-                Debug.Log(_alarmTime);
+
             }
 
             else if (goalDay == toDay)
@@ -94,18 +101,15 @@ public class Saturday_Alarm : MonoBehaviour
                 if (DateTime.Now > _alarmTime)
                 {
                     _alarmTime = _alarmTime.AddDays(7);
-                    Debug.Log(_alarmTime);
                 }
             }
 
             else if (goalDay < toDay)
             {
                 _alarmTime = _alarmTime.AddDays(goalDay + 7 - toDay);
-                Debug.Log(_alarmTime);
             }
 
             OpenAlarmSet = true;
-            Debug.Log(_alarmTime);
         }
     }
 
@@ -136,7 +140,6 @@ public class Saturday_Alarm : MonoBehaviour
             if (Close_goalDay > Close_toDay)
             {
                 Close_alarmTime = Close_alarmTime.AddDays(Close_goalDay - Close_toDay);
-                Debug.Log(Close_alarmTime);
             }
 
             else if (Close_goalDay == Close_toDay)
@@ -144,18 +147,15 @@ public class Saturday_Alarm : MonoBehaviour
                 if (DateTime.Now > Close_alarmTime)
                 {
                     Close_alarmTime = Close_alarmTime.AddDays(7);
-                    Debug.Log(Close_alarmTime);
                 }
             }
 
             else if (Close_goalDay < Close_toDay)
             {
                 Close_alarmTime = Close_alarmTime.AddDays(Close_goalDay + 7 - Close_toDay);
-                Debug.Log(Close_alarmTime);
             }
 
             CloseAlarmSet = true;
-            Debug.Log(Close_alarmTime);
         }
     }
 }

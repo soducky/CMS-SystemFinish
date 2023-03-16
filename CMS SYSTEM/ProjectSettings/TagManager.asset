@@ -18,6 +18,7 @@ TagManager:
   - DeleteComplete
   - BackGround
   - Server
+  - AlarmTimer
   layers:
   - Default
   - TransparentFX

@@ -108,9 +108,6 @@ public class OnButtonClik : MonoBehaviour
 
         udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[tmp - 1])));
 
-        Debug.Log("m_port : " + DataManager.Instance.data.Port[tmp - 1]);
-        Debug.Log("macaddres : " + macaddress);
-
         udpClient.Close();
     }
 
