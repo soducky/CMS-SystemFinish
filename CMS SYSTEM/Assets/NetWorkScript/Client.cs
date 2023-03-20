@@ -179,33 +179,41 @@ public class Client : MonoBehaviour
         {
             if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                UdpClient udpClient = new UdpClient();
-                udpClient.EnableBroadcast = true;
-
-                var dgram = new byte[1024];
-
-                for (int i = 0; i < 6; i++)
+                try
                 {
-                    dgram[i] = 255;
+                    UdpClient udpClient = new UdpClient();
+                    udpClient.EnableBroadcast = true;
+
+                    var dgram = new byte[1024];
+
+                    for (int i = 0; i < 6; i++)
+                    {
+                        dgram[i] = 255;
+                    }
+
+                    byte[] address_bytes = new byte[6];
+
+                    for (int i = 0; i < 6; i++)
+                    {
+                        address_bytes[i] = byte.Parse(DataManager.Instance.data.MacAddress[h].Substring(3 * i, 2), NumberStyles.HexNumber);
+                    }
+
+                    var macaddress_block = dgram.AsSpan(6, 16 * 6);
+
+                    for (int i = 0; i < 16; i++)
+                    {
+                        address_bytes.CopyTo(macaddress_block.Slice(6 * i));
+                    }
+
+                    udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[h])));
+
+                    udpClient.Close();
                 }
 
-                byte[] address_bytes = new byte[6];
-
-                for (int i = 0; i < 6; i++)
+                catch(Exception e)
                 {
-                    address_bytes[i] = byte.Parse(DataManager.Instance.data.MacAddress[h].Substring(3 * i, 2), NumberStyles.HexNumber);
+                    Debug.Log(e);
                 }
-
-                var macaddress_block = dgram.AsSpan(6, 16 * 6);
-
-                for (int i = 0; i < 16; i++)
-                {
-                    address_bytes.CopyTo(macaddress_block.Slice(6 * i));
-                }
-
-                udpClient.Send(dgram, dgram.Length, new System.Net.IPEndPoint(IPAddress.Broadcast, int.Parse(DataManager.Instance.data.Port[h])));
-
-                udpClient.Close();
             }
         }
     }
