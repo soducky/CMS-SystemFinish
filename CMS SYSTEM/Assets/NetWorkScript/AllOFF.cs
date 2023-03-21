@@ -23,7 +23,7 @@ public class AllOFF : MonoBehaviour
 
     public void AllOFFBtnClik()
     {
-        GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().AllOff();
+        GameObject.FindGameObjectWithTag("Server").GetComponent<Server>().AllOff();
     }
 
 }

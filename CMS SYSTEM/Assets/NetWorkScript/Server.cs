@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.IO;
+using PjlinkClient;
 
 public class Server : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class Server : MonoBehaviour
     TcpListener server;
     bool serverStarted;
 
+    int h;
+    string _hostName;
+
+    int _port;
     private void Awake()
     {
         var obj = FindObjectsOfType<Server>();
@@ -146,6 +151,48 @@ public class Server : MonoBehaviour
         Broadcast(data, clients); // 이름이 아니면 data 그대로 내보냄
     }
 
+    public void OffPC(string Mes)
+    {
+        Broadcast(Mes, clients);
+    }
+
+    public void AllOff()
+    {
+        for (h = 0; h < DataManager.Instance.data.i; h++)
+        {
+            if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                string mes = DataManager.Instance.data.IPAddress[h];
+                OffPC(mes);
+            }
+
+            else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
+            {
+                Invoke("AllOffLaterPJ", float.Parse(DataManager.Instance.data.Devel_Time));
+            }
+        }
+    }
+
+    public void AllOffLaterPJ()
+    {
+        for (h = 0; h < DataManager.Instance.data.i; h++)
+        {
+            _hostName = DataManager.Instance.data.IPAddress[h];
+            _port = int.Parse(DataManager.Instance.data.Port[h]);
+
+            if (_port == 4352)
+            {
+                PjlinkClient2 PJ = new PjlinkClient2(_hostName, _port, 2000);
+                PJ.PowerOff();
+
+                if (PJ.value == 2)
+                {
+                    DataManager.Instance.data.ImageLight[h] = false;
+                    DataManager.Instance.data.ZoneLight[h] = false;
+                }
+            }
+        }
+    }
     void Broadcast(string data, List<ServerClient> cl)
     {
         foreach (var c in cl)

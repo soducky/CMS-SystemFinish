@@ -112,7 +112,7 @@ public class ZoneOff : MonoBehaviour
             if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
                 string mes = DataManager.Instance.data.IPAddress[h];
-                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Server>().OffPC(mes);
             }
 
             else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
@@ -151,7 +151,7 @@ public class ZoneOff : MonoBehaviour
             if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
                 string mes = DataManager.Instance.data.IPAddress[h];
-                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Server>().OffPC(mes);
             }
 
             else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
@@ -188,7 +188,7 @@ public class ZoneOff : MonoBehaviour
             if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
                 string mes = DataManager.Instance.data.IPAddress[h];
-                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Server>().OffPC(mes);
             }
 
             else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
@@ -227,7 +227,7 @@ public class ZoneOff : MonoBehaviour
             if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
                 string mes = DataManager.Instance.data.IPAddress[h];
-                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Server>().OffPC(mes);
             }
 
             else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
@@ -266,7 +266,7 @@ public class ZoneOff : MonoBehaviour
             if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
                 string mes = DataManager.Instance.data.IPAddress[h];
-                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Server>().OffPC(mes);
             }
 
             else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
@@ -305,7 +305,7 @@ public class ZoneOff : MonoBehaviour
             if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
                 string mes = DataManager.Instance.data.IPAddress[h];
-                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Server>().OffPC(mes);
             }
 
             else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
@@ -344,7 +344,7 @@ public class ZoneOff : MonoBehaviour
             if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
                 string mes = DataManager.Instance.data.IPAddress[h];
-                GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().OnSendButton(mes);
+                GameObject.FindGameObjectWithTag("Server").GetComponent<Server>().OffPC(mes);
             }
 
             else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")

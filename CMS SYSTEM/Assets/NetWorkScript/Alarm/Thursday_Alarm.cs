@@ -47,7 +47,7 @@ public class Thursday_Alarm : MonoBehaviour
             AlarmMent.SetActive(true);
             GameObject.FindGameObjectWithTag("AlarmTimer").GetComponent<AlarmTimer>().Reset_Timer();
 
-            GameObject.FindGameObjectWithTag("Server").GetComponent<Client>().AllOff();
+            GameObject.FindGameObjectWithTag("Server").GetComponent<Server>().AllOff();
             CloseAlarmSet = false;
         }
 
