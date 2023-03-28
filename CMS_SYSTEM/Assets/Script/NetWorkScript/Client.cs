@@ -185,12 +185,12 @@ public class Client : MonoBehaviour // 서버 대신 관찰해주는 client 클래스
 
 
     public void NoKioskAllOn()
-    { // 나머지는 위와 동일 ** 키오스크로 인해 4부터 반복, 0~3은 고정으로 둠** 
+    {  //  키오스크 버젼이 아닌 전체버젼이므로 메서드 이름 신경 ㄴ
         try
         {
             GameObject.FindGameObjectWithTag("Server").GetComponent<AduinoOFF>().ArduinoOnCommand(); // 아두이노 포트가 연결될떄 try문 실행 
 
-            for (h = 4; h < DataManager.Instance.data.i; h++)
+            for (h = 0; h < DataManager.Instance.data.i; h++) // 전체 버젼이므로 0부터 i까지
             {
                 if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
                 {
@@ -219,7 +219,7 @@ public class Client : MonoBehaviour // 서버 대신 관찰해주는 client 클래스
         catch
         {
             // 아두이노 포트가 연결되지 않을때 catch문 실행 
-            for (h = 4; h < DataManager.Instance.data.i; h++)
+            for (h = 0; h < DataManager.Instance.data.i; h++) // 전체 버젼이므로 0부터 i까지
             {
                 if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
                 {
@@ -249,7 +249,7 @@ public class Client : MonoBehaviour // 서버 대신 관찰해주는 client 클래스
 
     public void NoKioskAllOnLaterPC()
     {
-        for (h = 4; h < DataManager.Instance.data.i; h++) 
+        for (h = 0; h < DataManager.Instance.data.i; h++) 
         {
             if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {

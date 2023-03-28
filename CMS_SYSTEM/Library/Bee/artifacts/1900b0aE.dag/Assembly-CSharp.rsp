@@ -119,9 +119,9 @@
 -define:UDUINO_MEGA_MESSAGE
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"C:/Users/opem2/OneDrive/문서/GitHub/CMS_Kiosk/CMS_Kiosk/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
--r:"C:/Users/opem2/OneDrive/문서/GitHub/CMS_Kiosk/CMS_Kiosk/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"C:/Users/opem2/OneDrive/문서/GitHub/CMS_Kiosk/CMS_Kiosk/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"C:/Users/opem2/OneDrive/문서/GitHub/CMS-SystemFinish/CMS_SYSTEM/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"C:/Users/opem2/OneDrive/문서/GitHub/CMS-SystemFinish/CMS_SYSTEM/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"C:/Users/opem2/OneDrive/문서/GitHub/CMS-SystemFinish/CMS_SYSTEM/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"D:/2021.3.14f1-x86_64/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"D:/2021.3.14f1-x86_64/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"D:/2021.3.14f1-x86_64/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"

@@ -194,14 +194,14 @@ public class Server : MonoBehaviour
             }
         }
     }
-
-    public void NoKioskAllOff() //  ** 키오스크로 인해 4부터 반복, 0~3은 고정으로 둠** 
-    {
+ 
+    public void NoKioskAllOff() //  키오스크 버젼이 아닌 전체버젼이므로 메서드 이름 신경 ㄴ
+    {                           
         try
         {
             GameObject.FindGameObjectWithTag("Server").GetComponent<AduinoOFF>().ArduinoOffCommand(); // 아두이노가 연결되었을때 try문 실행
 
-            for (h = 4; h < DataManager.Instance.data.i; h++)
+            for (h = 0; h < DataManager.Instance.data.i; h++) // 전체 버젼이므로 0부터 i까지
             {
                 if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
                 {
@@ -218,7 +218,7 @@ public class Server : MonoBehaviour
 
         catch  // 아두이노가 연결되지 않았을때 try문 실행
         {
-            for (h = 4; h < DataManager.Instance.data.i; h++)
+            for (h = 0; h < DataManager.Instance.data.i; h++)
             {
                 if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
                 {
@@ -236,7 +236,7 @@ public class Server : MonoBehaviour
 
     public void NoKioskAllOffLaterPJ()
     {
-        for (h = 4; h < DataManager.Instance.data.i; h++)
+        for (h = 0; h < DataManager.Instance.data.i; h++)
         {
             _hostName = DataManager.Instance.data.IPAddress[h];
             _port = int.Parse(DataManager.Instance.data.Port[h]);

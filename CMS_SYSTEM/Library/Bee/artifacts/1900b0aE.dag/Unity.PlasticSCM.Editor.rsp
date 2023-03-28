@@ -119,9 +119,9 @@
 -define:UDUINO_MEGA_MESSAGE
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"C:/Users/opem2/OneDrive/문서/GitHub/CMS_Kiosk/CMS_Kiosk/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
--r:"C:/Users/opem2/OneDrive/문서/GitHub/CMS_Kiosk/CMS_Kiosk/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/unityplastic.dll"
--r:"C:/Users/opem2/OneDrive/문서/GitHub/CMS_Kiosk/CMS_Kiosk/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"C:/Users/opem2/OneDrive/문서/GitHub/CMS-SystemFinish/CMS_SYSTEM/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
+-r:"C:/Users/opem2/OneDrive/문서/GitHub/CMS-SystemFinish/CMS_SYSTEM/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/unityplastic.dll"
+-r:"C:/Users/opem2/OneDrive/문서/GitHub/CMS-SystemFinish/CMS_SYSTEM/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 -r:"D:/2021.3.14f1-x86_64/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"D:/2021.3.14f1-x86_64/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"D:/2021.3.14f1-x86_64/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"

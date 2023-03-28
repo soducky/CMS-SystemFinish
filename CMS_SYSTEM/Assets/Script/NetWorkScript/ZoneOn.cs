@@ -120,7 +120,7 @@ public class ZoneOn : MonoBehaviour // 존on/off는 오브젝트 갯수를 특정할 수 없어
     public void Zone1OnBtnClik()
     {
 
-        for (h = 4; h<= 7; h++) // 키오스크 0~3은 제외, 4부터 7까지 반복  프로젝터 킴 
+        for (h = 0; h<= 7; h++) // 프로젝터 킴 
         {
             if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
             {
@@ -149,7 +149,7 @@ public class ZoneOn : MonoBehaviour // 존on/off는 오브젝트 갯수를 특정할 수 없어
 
     public void LaterPCOnZone1()
     {
-        for (h = 4; h <= 7; h++)
+        for (h = 0; h <= 7; h++)
         {
             if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {

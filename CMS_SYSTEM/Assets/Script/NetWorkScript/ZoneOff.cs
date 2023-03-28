@@ -107,7 +107,7 @@ public class ZoneOff : MonoBehaviour
 
     public void Zone1OffBtnClik()
     {
-        for (h = 4; h <= 7; h++) // 키오스크 0~3은 제외, 4부터 7까지 반복,  PC끔 
+        for (h = 0; h <= 7; h++) // PC끔 
         {
             if (DataManager.Instance.data.modeSelect[h] == true && DataManager.Instance.data.IPAddress[h] != "0")
             {
@@ -117,14 +117,14 @@ public class ZoneOff : MonoBehaviour
 
             else if (DataManager.Instance.data.modeSelect[h] == false && DataManager.Instance.data.IPAddress[h] != "0")
             {
-                Invoke("LaterPJOffZone1", float.Parse(DataManager.Instance.data.Devel_Time)); // 키오스크 0~3은 제외, 4부터 7까지 반복, 프로젝터 끔
+                Invoke("LaterPJOffZone1", float.Parse(DataManager.Instance.data.Devel_Time)); //  프로젝터 끔
             }
         }
     }
 
     public void LaterPJOffZone1()
     {
-        for (h = 4; h <= 7; h++)
+        for (h = 0; h <= 7; h++)
         {
             _hostName = DataManager.Instance.data.IPAddress[h];
             _port = int.Parse(DataManager.Instance.data.Port[h]);
